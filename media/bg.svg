@@ -1,28 +1,24 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.6 885.23">
-  <defs>
-    <style>
-      .cls-1 {
-        opacity: 0.03;
-      }
-
-      .cls-2 {
-        fill: #fff;
-      }
-    </style>
-  </defs>
-  <title>bg</title>
-  <g class="cls-1">
-    <rect class="cls-2" y="750.68" width="128.81" height="134.56"/>
-    <rect class="cls-2" x="322.18" y="738.33" width="146.9" height="146.9"/>
-    <rect class="cls-2" x="128.81" y="691.86" width="193.37" height="193.37"/>
-    <rect class="cls-2" x="1675.76" y="640.4" width="244.84" height="244.84"/>
-    <rect class="cls-2" x="1828.2" y="742.55" width="76.83" height="76.83" transform="translate(-53.84 1224.6) rotate(-41.1)"/>
-    <rect class="cls-2" x="1634.41" y="112.15" width="50.59" height="50.59"/>
-    <rect class="cls-2" x="1512.51" y="770.23" width="115" height="115"/>
-    <rect class="cls-2" x="281.36" y="266.92" width="50.59" height="50.59"/>
-    <rect class="cls-2" x="457.25" y="885.59" width="50.59" height="50.59" transform="matrix(0.87, 0.5, -0.5, 0.87, 519.69, -314)"/>
-    <rect class="cls-2" x="1627.51" y="836.98" width="48.25" height="48.25"/>
-    <rect class="cls-2" x="18.03" y="759.11" width="136.37" height="136.37" transform="translate(-242.97 -131.51) rotate(-17.33)"/>
-    <rect class="cls-2" x="133.52" y="218.23" width="136.37" height="136.37" transform="translate(150.97 -255.03) rotate(26.89)"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1884px" height="1080px" viewBox="0 0 1884 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="103.092151%" y1="-6.30870087%" x2="-3.88580274%" y2="95.1110791%" id="linearGradient-1">
+            <stop stop-color="#ffffff" offset="0%"></stop>
+            <stop stop-color="#ffffff" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-36.000000, 0.000000)" stroke="url(#linearGradient-1)">
+            <g id="Group" transform="translate(43.000000, -53.000000)">
+                <rect id="Rectangle-2" stroke-width="15" transform="translate(101.312465, 928.700985) rotate(26.000000) translate(-101.312465, -928.700985) " x="61.8124651" y="892.700985" width="79" height="72"></rect>
+                <rect id="Rectangle-2-Copy" stroke-width="15" transform="translate(1181.549833, 370.549833) rotate(26.000000) translate(-1181.549833, -370.549833) " x="1132.54983" y="321.549833" width="98" height="98" rx="49"></rect>
+                <polygon id="Path-4-Copy" stroke-width="15" transform="translate(1871.857024, 57.075867) rotate(-130.000000) translate(-1871.857024, -57.075867) " points="1829.24689 90.8806671 1883.51234 20.4812692 1914.46716 93.6704653"></polygon>
+                <polygon id="Path-4" stroke-width="15" points="1306 1157.60784 1349 1098 1404 1174"></polygon>
+                <polyline id="Path-5" stroke-width="10" transform="translate(8.500000, 170.500000) rotate(90.000000) translate(-8.500000, -170.500000) " points="-35 179 -9.7826087 162 8.5 179 29.3043478 162 52 179"></polyline>
+                <polyline id="Path-5-Copy" stroke-width="10" points="1828 657 1853.21739 640 1871.5 657 1892.30435 640 1915 657"></polyline>
+            </g>
+        </g>
+    </g>
 </svg>

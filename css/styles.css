@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
 @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 * {
     margin: 0; 
     padding: 0;  
@@ -45,11 +46,6 @@ body {
     color: #b7b7b7;
   }
 
-.navContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 .navLeft img {
     width: 145px;
     height: 50px;
@@ -58,11 +54,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     width: 100%;
     align-items: center;
     min-height: 100px;
+    position:Relative;
+    z-index:1;
 }
 .heroContainer {
     background: #131a22;
@@ -74,32 +72,49 @@ body {
     position:Relative;
 }
 .hero {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 100%;
     align-items: center;
-    flex: 1;
+    flex: 0.75;
     justify-content: center;
+    position:Relative;
+    z-index:1;
 }
 .navRight ul a:last-child {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 4px;
-    border: solid 1px rgba(255,255,255,0.2);
-    color: rgba(255,255,255,1);
+    background: rgba(255,153,0,1);
+    background: -moz-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,153,0,1)), color-stop(100%, rgba(247,183,51,1)));
+    background: -webkit-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: linear-gradient(to right, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1 );
+    color: rgb(255, 255, 255);
+}
+.subscribeContainer span {
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    opacity: 0.4;
 }
 .navRight ul a {
     font-size: 16px;
     height: 42px;
     display: inline-flex;
     align-items: center;
-    color: rgba(255,255,255,0.6);
+    /* color: rgba(255,255,255,0.6); */
+    font-weight: 500;
 }
 .navRight ul a:not(:last-child) {
-    margin-right:15px;
+    margin-right:25px;
 }
 .heroLeft h4 {
     font-size: 54px;
@@ -113,7 +128,7 @@ body {
     margin: 21px 0 48px;
     opacity: .4;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 .homeTopInput {
     height: 65px;
@@ -140,7 +155,14 @@ body {
     color: #ffffff;
     padding: 17px 32px;
     border-radius: 4px;
-    background-color: #ff9900;
+    background: rgba(255,153,0,1);
+    background: -moz-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,153,0,1)), color-stop(100%, rgba(247,183,51,1)));
+    background: -webkit-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: linear-gradient(to right, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1 );
     position: absolute;
     right: 5px;
     top: 7px;
@@ -153,7 +175,6 @@ body {
 }
 .heroRight {
     width: 100%;
-    height: 258px;
     display: flex;
     justify-content: center;
 }
@@ -162,7 +183,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .subscribeContainer i {
     position: absolute;
@@ -173,39 +194,55 @@ body {
 }
 .timeContainer {
     display: flex;
-    background: #131a2200;
+    background: rgba(255,153,0,1);
+    background: -moz-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,153,0,1)), color-stop(100%, rgba(247,183,51,1)));
+    background: -webkit-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: linear-gradient(to right, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1 );
     border-radius: 3px;
     padding-left: 25px;
     padding-right: 25px;
     align-items: center;
     color: #ffffff;
     position: relative;
-    flex-direction: column;
-    padding-bottom: 15px;
+    flex-direction: row;
+    height: 110px;
+    width: 140px;
+}
+.timeContainer:not(:last-child) {
+    margin-bottom:25px;
 }
 .timeContainer h4 {
-    font-size: 71px;
+    font-size: 100px;
     font-weight: bold;
-    letter-spacing: 10px;
     color: #fff;
+    position: absolute;
+    right: 17px;
+    display: flex;
 }
-.timeContainer p {
+.timeContainer h4 span {
     display: flex;
     align-items: center;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 26px;
     color: white;
+    letter-spacing:5px;
+    margin-left: 10px;
 }
-/* .timeContainer:nth-child(2) {
-    margin-left: 50px;
+.timeContainer:nth-child(2) {
+    margin-left: 220px;
+    width: 177px;
 }
 .timeContainer:nth-child(3) {
-    margin-left: 100px;
-} */
+    margin-left: 430px;
+}
 .timerContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 450px;
@@ -215,10 +252,31 @@ body {
     position: absolute;
     bottom: 0px;
     width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    z-index: 0;
+}
+.glowingCircle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    background: #ffffff14;
+    border-radius: 100%;
+    box-shadow: 0px 0px 305px #ffffff3b;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-
-
+.heroLeft h4 span {
+    color: #ff9900;
+}
 
 
 
