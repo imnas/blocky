@@ -70,6 +70,7 @@ body {
     padding-right: 25px;
     height: 100vh;
     position:Relative;
+    justify-content: space-between;
 }
 .hero {
     max-width: 1200px;
@@ -78,11 +79,12 @@ body {
     display: flex;
     flex-direction: row;
     height: 100%;
-    align-items: center;
+    align-items: flex-start;
     flex: 0.75;
     justify-content: center;
     position:Relative;
     z-index:1;
+    margin-top:50px;
 }
 .navRight ul a:last-child {
     padding-left: 20px;
@@ -200,7 +202,7 @@ body {
     background: -webkit-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
     background: -o-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
     background: -ms-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
-    background: linear-gradient(to right, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: linear-gradient(to right, rgb(255, 153, 0) 0%, rgb(247, 183, 51) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1 );
     border-radius: 3px;
     padding-left: 25px;
@@ -209,8 +211,8 @@ body {
     color: #ffffff;
     position: relative;
     flex-direction: row;
-    height: 110px;
-    width: 140px;
+    height: 82px;
+    width: 146px;
 }
 .timeContainer:not(:last-child) {
     margin-bottom:25px;
@@ -253,8 +255,10 @@ body {
     bottom: 0px;
     width: 100%;
     height: 100%;
-    opacity: 0.05;
+    opacity: 0.1;
     z-index: 0;
+    left: 0;
+    filter: blur(5px);
 }
 .glowingCircle {
     position: absolute;
@@ -277,8 +281,23 @@ body {
 .heroLeft h4 span {
     color: #ff9900;
 }
-
-
+.learnMoreSection {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+.learnMoreSection a i {
+    margin-right: 5px;
+}
+.learnMoreSection a {
+    font-weight: bold;
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
 
 
 
