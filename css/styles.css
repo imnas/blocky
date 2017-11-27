@@ -63,7 +63,7 @@ body {
     align-items: center;
     min-height: 100px;
     position:Relative;
-    z-index:1;
+    z-index:10;
 }
 .heroContainer {
     background: #131a22;
@@ -255,6 +255,9 @@ body {
     width: 100%;
     max-width: 450px;
     justify-content: space-between;
+}
+.mapSection {
+    margin-top: 50px;
 }
 #bgMedia {
     position: absolute;

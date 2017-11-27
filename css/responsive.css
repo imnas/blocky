@@ -41,13 +41,87 @@
     .heroLeft {
         justify-content: center;
         align-items: center;
+        margin-bottom: 50px;
     }
     .heroLeft p {
         text-align: center;
     }
+    .heroLeft h4 {
+        text-align: center;
+        font-size: 46px;
+    }
 }
 
-
+.mobileNav {
+    display:none;
+    position:relative;
+}
+.burgerMenu span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: white;
+}
+.burgerMenu span:not(:last-child) {
+    margin-bottom: 10px;
+}
+.navRight {
+    position:relative;
+    z-index:100;
+}
+.actualMobileNav a {
+    color: black;
+    font-weight: 700;
+    font-size: 21px;
+    padding: 15px;
+    background: white;
+}
+.actualMobileNav {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    z-index:100;
+    min-width: 200px;
+}
+@media screen and (max-width: 768px) {
+    .mobileNav {
+        display:flex;
+    }
+    .navRight ul {
+        display: none;
+    }
+    .featuresContainer {
+        flex-direction: column;
+    }
+    .featureIndividual:last-child {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .timeContainer h4 span {
+        margin-right: 0px;
+        font-size: 14px;
+        margin-top: 6px;
+    }
+    .timeContainer {
+        background: transparent !important;
+    }
+    .timeContainer h4 {
+        font-size: 35px;
+    }
+    .timeContainer:nth-child(2) {
+        margin-left: 5px;
+        width: 112px;
+    }
+    .timeContainer:nth-child(3) {
+        margin-left: 24px;
+    }
+    .heroLeft h4 {
+        text-align: center;
+        font-size: 37px;
+    }
+}
 
 
 
