@@ -28,7 +28,10 @@ html {
     height:100%; 
 }
 body {
-    font-family: 'Maven Pro', sans-serif;
+    background: #f2f5f7;
+    font-family: "Maven Pro", Arial;
+    -webkit-font-smoothing: antialiased;
+    color: #101010;
     height:100%;
     color:#ffffff;
     overflow-x:hidden;
@@ -87,9 +90,9 @@ body {
     margin-top:50px;
 }
 .navRight ul a:last-child {
-    padding-left: 20px;
+    /* padding-left: 20px;
     padding-right: 20px;
-    border-radius: 4px;
+    border-radius: 3px;
     background: rgba(255,153,0,1);
     background: -moz-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,153,0,1)), color-stop(100%, rgba(247,183,51,1)));
@@ -97,7 +100,7 @@ body {
     background: -o-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
     background: -ms-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
     background: linear-gradient(to right, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1 ); */
     color: rgb(255, 255, 255);
 }
 .subscribeContainer span {
@@ -108,7 +111,7 @@ body {
     opacity: 0.4;
 }
 .navRight ul a {
-    font-size: 16px;
+    font-size: 17px;
     height: 42px;
     display: inline-flex;
     align-items: center;
@@ -232,8 +235,9 @@ body {
     text-transform: uppercase;
     font-size: 26px;
     color: white;
-    letter-spacing:5px;
+    letter-spacing: 0px;
     margin-left: 10px;
+    margin-right: 20px;
 }
 .timeContainer:nth-child(2) {
     margin-left: 220px;
@@ -250,15 +254,19 @@ body {
     max-width: 450px;
     justify-content: space-between;
 }
-.bgMedia {
+#bgMedia {
     position: absolute;
     bottom: 0px;
     width: 100%;
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.04;
     z-index: 0;
+    filter: blur(0px);
+    /* max-width: 950px; */
+    margin-left: auto;
+    margin-right: auto;
     left: 0;
-    filter: blur(5px);
+    right: 0;
 }
 .glowingCircle {
     position: absolute;
@@ -277,7 +285,17 @@ body {
     margin-top: auto;
     margin-bottom: auto;
 }
-
+.sectionContainer {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.commonSection {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #131a22;
+}
 .heroLeft h4 span {
     color: #ff9900;
 }
@@ -298,18 +316,74 @@ body {
     width: 100%;
     text-align: center;
 }
+.sectionHeader h4 {
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #101010;
+    font-weight: 500;
+    margin: 0 0 5px;
+    line-height: 1.26;
+    margin-bottom: 4px;
+}
 
+.sectionHeader h5 {
+    font-size: 28px;
+    line-height: 1.19;
+    letter-spacing: -1px;
+    color: #8fa9b0;
+    font-weight: 100;
+}
+.sectionHeader {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionHeader p {
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: -0.3px;
+    color: #8fa9b0;
+    margin: 10px 0 50px;
+    text-align: center;
+}
 
+.actualSection p {
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: -0.3px;
+    color: #8fa9b0;
+    margin-top: 10px;
+}
+.actualSection h4 {
+    font-size: 22px;
+    font-weight: 500;
+}
+.featuresContainer {
+    display: flex;
+    flex-direction: row;
+}
+.featuresContainer:last-child {
+    margin-top:50px;
+}
+.fITop i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.featureIndividual {
+    width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
+.featureIndividual:last-child {
+    margin-left:50px;
+}
+.overlayFeature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 
 
