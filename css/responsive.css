@@ -9,7 +9,7 @@
     }
     .timeContainer:nth-child(2) {
         margin-left: 50px;
-        width: 177px;
+        width: 100px;
     }
     .timeContainer:nth-child(3) {
         margin-left: 50px;
@@ -27,6 +27,23 @@
     .timeContainer {
         height: 55px;
         width: 80px;
+    }
+    .heroRight {
+        margin-bottom: 50px;
+    }
+    .heroContainer {
+        height: 100vh !important;
+    }
+    .wrapper {
+        position: relative;
+        right: -30px;
+    }
+    .heroLeft {
+        justify-content: center;
+        align-items: center;
+    }
+    .heroLeft p {
+        text-align: center;
     }
 }
 
