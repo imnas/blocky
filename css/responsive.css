@@ -1,4 +1,7 @@
 @media screen and (max-width: 1150px) {
+    .timeContainer:first-child {
+        margin-right: 75px;
+    }
     .hero {
         flex-direction: column-reverse !important;
         justify-content: center;
@@ -6,13 +9,20 @@
     }
     .timerContainer {
         flex-direction: row !important;
+        justify-content: center;
+    }
+    .timeContainer:first-child {
+        margin-right: 7.5px !important;
+        width: 140px;
     }
     .timeContainer:nth-child(2) {
         margin-left: 50px;
         width: 100px;
+        margin-right: 0px;
     }
     .timeContainer:nth-child(3) {
-        margin-left: 50px;
+        margin-left: 5px;
+        width: 145px;
     }
     .timeContainer:not(:last-child) {
         margin-bottom: 0px;
@@ -21,8 +31,13 @@
         font-size: 57px;
     }
     .timeContainer h4 span {
-        margin-right:0px;
-        font-size: 17px;
+        margin-right: 0px;
+        font-size: 16px;
+        margin-top: 10px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        height: 50px;
+        margin-left: 10px;
     }
     .timeContainer {
         height: 55px;
@@ -36,7 +51,7 @@
     }
     .wrapper {
         position: relative;
-        right: -30px;
+        right: 0px;
     }
     .heroLeft {
         justify-content: center;
@@ -86,6 +101,12 @@
     min-width: 200px;
 }
 @media screen and (max-width: 768px) {
+    .sectionHeader h4 {
+        font-size:34px;
+    }
+    .sectionHeader h5 {
+        font-size: 25px;
+    }
     .mobileNav {
         display:flex;
     }
@@ -102,7 +123,8 @@
     .timeContainer h4 span {
         margin-right: 0px;
         font-size: 14px;
-        margin-top: 6px;
+        margin-top: 8px !important;
+        height: 30px;
     }
     .timeContainer {
         background: transparent !important;
@@ -115,15 +137,60 @@
         width: 112px;
     }
     .timeContainer:nth-child(3) {
-        margin-left: 24px;
+        width: 112px;
+    }
+    .timeContainer:first-child {
+        width: 112px;
     }
     .heroLeft h4 {
         text-align: center;
         font-size: 37px;
     }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
 }
 
 
-
+@media screen and (max-width: 582px) {
+    .timeContainer {
+        margin:0px !important;
+    }
+    .timeContainer h4 {
+        font-size: 30px;
+    }
+    .timeContainer h4 span {
+        background: transparent !important;
+        margin-left: 5px;
+        padding: 0px !important;
+    }
+    .dualInputContainer {
+        flex-direction: column;
+    }
+    .dualInputContainer input:last-child {
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+    .typeOfUser {
+        flex-direction: column;
+    }
+    .typeOfUser p:last-child {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    .btnHome {
+        padding: 18px 18px;
+        font-size: 13px;
+    }
+}
 
 

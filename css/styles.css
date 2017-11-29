@@ -201,6 +201,50 @@ body {
 }
 .timeContainer {
     display: flex;
+    /* background: rgba(255,153,0,1);
+    background: -moz-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,153,0,1)), color-stop(100%, rgba(247,183,51,1)));
+    background: -webkit-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: linear-gradient(to right, rgb(255, 153, 0) 0%, rgb(247, 183, 51) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1 ); */
+    /* border-radius: 3px;
+    padding-left: 25px;
+    padding-right: 25px; */
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+    flex-direction: row;
+    height: 82px;
+    /* width: 146px; */
+}
+.timeContainer:not(:last-child) {
+    /* margin-bottom:25px; */
+}
+.timeContainer:first-child {
+    width: 100%;
+    margin-right: 460px;
+}
+.timeContainer h4 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    right: 0px;
+    display: flex;
+}
+.wrapper {
+    width: 100%;
+}
+.timeContainer h4 span {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 21px;
+    color: white;
+    letter-spacing: 0px;
     background: rgba(255,153,0,1);
     background: -moz-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,153,0,1)), color-stop(100%, rgba(247,183,51,1)));
@@ -209,51 +253,28 @@ body {
     background: -ms-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
     background: linear-gradient(to right, rgb(255, 153, 0) 0%, rgb(247, 183, 51) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1 );
-    border-radius: 3px;
     padding-left: 25px;
     padding-right: 25px;
-    align-items: center;
-    color: #ffffff;
-    position: relative;
-    flex-direction: row;
-    height: 82px;
-    width: 146px;
-}
-.timeContainer:not(:last-child) {
-    margin-bottom:25px;
-}
-.timeContainer h4 {
-    font-size: 80px;
-    font-weight: bold;
-    color: #fff;
-    position: absolute;
-    right: 26px;
-    display: flex;
-}
-.timeContainer h4 span {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 23px;
-    color: white;
-    letter-spacing: 0px;
-    margin-left: 10px;
-    margin-right: 20px;
+    height: 65px;
+    margin-top: 17px;
+    margin-left: 25px;
+    border-radius: 3px;
 }
 .timeContainer:nth-child(2) {
-    margin-left: 220px;
-    width: 177px;
+    /* margin-left: 220px; */
+    /* width: 177px; */
+    width: 100%;
+    margin-right: 210px;
 }
 .timeContainer:nth-child(3) {
-    margin-left: 430px;
+    /* margin-left: 430px; */
+    width: 100%;
 }
 .timerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 450px;
     justify-content: space-between;
 }
 .mapSection {
