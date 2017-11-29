@@ -202,7 +202,7 @@ transition-duration: 0.5s;
                 </div>
                 <div class="cFormContainer">
                     <div class="dualInputContainer">
-                        <input placeholder="Full name"/><input placeholder="Your email address"/>
+                        <input id="contact_name" placeholder="Full name"/><input id="contact_email" placeholder="Your email address"/>
                     </div>
                     <form action="#" class="typeOfUser">
                         <p>
@@ -215,8 +215,8 @@ transition-duration: 0.5s;
                         </p>
                     </form>
                     <div class="individualInputContainer">
-                        <textarea rows="12" placeholder="Type your message here..."></textarea>
-                        <a>Send</a>
+                        <textarea id="contact_message" rows="12" placeholder="Type your message here..."></textarea>
+                        <a id="contact_send">Send</a>
                     </div>
                 </div>
             </div>
@@ -295,11 +295,29 @@ transition-duration: 0.5s;
           alert("Thank you for subscribing!")
         },
         error: () => {
-          alert("There was an error adding your email, please try again later.")
+          alert("There was an error adding your email. Please try again later.")
         }
       });
 
     });
+
+
+    $('#contact_send').click(() => {
+
+      $.ajax({
+        type: 'GET',
+        url: '/contact?name=' + $('#contact_name').val() + '&email=' + $('#contact_email').val() + '&message=' + $('#contact_message').val(),
+        success: () => {
+          alert("Thank you for reaching out! One of our representatives will review your message shortly.")
+        },
+        error: () => {
+          alert("There was an error sending your message. Please trying again later.")
+        }
+      })
+
+    })
+
+
 
 
 
