@@ -263,7 +263,7 @@ transition-duration: 0.5s;
       var hours = Math.floor(delta / 3600) % 24;
       delta -= hours * 3600;
       var minutes = Math.floor(delta / 60) % 60;
-      delta -= minutes * 60;
+      delta -= minutes * 60;  
       var seconds = Math.floor(delta % 60);
       return {
         days: pad(days, 2),
