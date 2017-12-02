@@ -43,10 +43,8 @@ a:active {
 }
 
 .navbar-default .navbar-nav>li:last-of-type>a {
-    height: 45px;
     font-size: 1.9rem;
     font-weight: 600;
-    border-radius: 6px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -61,13 +59,13 @@ a:active {
     width: 15px;
     margin: 0 auto;
     text-align: center;
-    border-radius: 28%;
+    border-radius: 2px;
     border: 1px solid white;
 }
-
+/* 
 .nav>li {
     margin-right: 28px;
-}
+} */
 
 .navbar-nav {
     margin-top: 18px;
@@ -79,7 +77,6 @@ a:active {
 
 .navbar-brand>img:last-of-type {
     width: 125px;
-    margin-left: 15px;
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -92,7 +89,7 @@ a:active {
 .navbar-nav>li>.dropdown-menu {
     background: #07090d;
     border: none;
-    border-radius: 6px;
+    border-radius: 2px;
     padding: 0;
     width: 100%;
     margin-top: 15px;
@@ -122,10 +119,9 @@ a:active {
 /* Main */
 
 table {
-    box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.18);
-    background-color: #131A22;
+    box-shadow: 0 0 60px 0 rgb(15, 20, 26);
     margin-top: 30px;
-    border-radius: 10px;
+    border-radius: 2px;
 }
 
 .email_blocky {
@@ -135,15 +131,14 @@ table {
 .email_blocky>div>h1 {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 2.7rem;
+    font-size: 20px;
     color: white;
     margin-bottom: 8px;
 }
 
 .email_blocky>div>p {
-    font-size: 1.6rem;
+    font-size: 15px;
     color: gainsboro;
-    font-style: italic;
     font-weight: 100;
 }
 
@@ -168,14 +163,14 @@ table {
 }
 
 .table>tbody>tr>td {
-    padding: 30px 10px!important;
-    font-size: 1.65rem;
+    padding: 15px 15px!important;
+    font-size: 14px;
     color: white;
-    font-weight: 100;
+    font-weight: 500;
 }
 
 .table>thead>tr>th:first-child {
-    border-radius: 10px 0 0 0;
+    border-radius: 2px 0 0 0;
 }
 
 .table>thead>tr {
@@ -183,7 +178,8 @@ table {
 }
 
 .table>thead>tr>th:last-child {
-    border-radius: 0 10px 0 0;
+    border-radius: 0 2px 0 0;
+    width: 180px;
 }
 
 .table>tbody>tr>td:last-of-type>ul {
@@ -205,7 +201,7 @@ table {
 }
 
 .status {
-    border-radius: 50%;
+    border-radius: 2px;
     width: 12px;
     height: 12px;
     margin: 0 auto;
@@ -227,43 +223,53 @@ table {
 
 .anal_item {
     color: white;
-    background: linear-gradient(45deg, #2e87ff 0%, #244df4 100%);
-    padding: 3px 40px;
+    background: rgba(255,153,0,1);
+    background: -moz-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,153,0,1)), color-stop(100%, rgba(247,183,51,1)));
+    background: -webkit-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    background: linear-gradient(to right, rgba(255,153,0,1) 0%, rgba(247,183,51,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1 );
+    padding: 25px;
     margin-right: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0px 90px 0 rgba(14, 19, 27, 0.73);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
-
+.anal_item:last-child {
+    margin-right:0px;
+}
 .anal_item>div>h1 {
-    font-weight: 900;
-    font-size: 3rem;
+    font-weight: 700;
+    font-size: 21px;
     text-transform: uppercase;
-    margin-top: 0;
-    line-height: 39px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .anal_item>div>h1>span {
-    font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: bold;
     text-transform: none;
-    letter-spacing: 0;
     text-transform: uppercase;
     line-height: normal;
+    display: block;
+    font-size: 14px;
 }
 
 .anal_item>div {display: inline-block;}
 
 .anal_item>h1 {
     display: inline-block;
-    float: right;
     top: 0;
     bottom: 0;
-    margin-top: 35px;
     position: relative;
-    font-size: 6rem;
+    font-size: 41px;
     font-weight: bolder;
+    margin-top:0px;
+    margin-bottom:0px;
 }
 
 
