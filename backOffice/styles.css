@@ -119,7 +119,7 @@ a:active {
 /* Main */
 
 table {
-    box-shadow: 0 0 60px 0 rgb(15, 20, 26);
+    box-shadow: 0 0 40px 0 rgb(15, 20, 26);
     margin-top: 30px;
     border-radius: 2px;
 }
@@ -270,6 +270,36 @@ table {
     font-weight: bolder;
     margin-top:0px;
     margin-bottom:0px;
+}
+
+.pagination {
+    display: table;
+    margin: 30px auto;
+}
+
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    color: #fff;
+    background: #0c0f13;
+}
+
+.pagination>li>a, .pagination>li>span {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px!important;
+    color: #fff;
+    background: #0f141a;
+    margin: 0 9px;
+    margin-top: 23px;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    border: none;
+    background: #faab20;
+    box-shadow: 0 2px 20px #0f141a3d;
+    font-weight: 600;
+    border-radius: 5px!important;
+    font-size: 1.8rem;
+    margin: 19px 9px;
 }
 
 
