@@ -68,22 +68,26 @@
 }
 
 .mobileNav {
-    display:none;
-    position:relative;
+    display: none;
+    position: relative;
 }
+
 .burgerMenu span {
     display: block;
     width: 35px;
     height: 3px;
     background: white;
 }
+
 .burgerMenu span:not(:last-child) {
     margin-bottom: 10px;
 }
+
 .navRight {
-    position:relative;
-    z-index:100;
+    position: relative;
+    z-index: 100;
 }
+
 .actualMobileNav a {
     color: black;
     font-weight: 700;
@@ -91,24 +95,59 @@
     padding: 15px;
     background: white;
 }
+
 .actualMobileNav {
     position: absolute;
     top: 40px;
     right: 0px;
     display: flex;
     flex-direction: column;
-    z-index:100;
+    z-index: 100;
     min-width: 200px;
 }
+
+@media screen and (min-width:900px) {
+    .footerMid {
+        display: flex;
+        justify-content: space-BETWEEN;
+    }
+    .footerItem {
+        text-align: left !important;
+        padding-top: 0 !important;
+        margin-top: 50px !important;
+    }
+    .footerBottom {
+        display: flex;
+        text-align: left !important;
+        margin-top: 0;
+        margin: auto;
+    }
+    .bottomItem {
+        margin: 40px auto;
+        padding: 0 !important;
+        flex: 1;
+    }
+    .socialContainerOuter {
+        overflow: hidden;
+    }
+    .footerBottom>.bottomItem:last-child>ul {
+        align-content: right;
+        justify-content: flex-end;
+    }
+    .footerBottom>.bottomItem:last-child>ul>li {
+        flex-basis:8%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .sectionHeader h4 {
-        font-size:34px;
+        font-size: 34px;
     }
     .sectionHeader h5 {
         font-size: 25px;
     }
     .mobileNav {
-        display:flex;
+        display: flex;
     }
     .navRight ul {
         display: none;
@@ -146,24 +185,12 @@
         text-align: center;
         font-size: 37px;
     }
-    .footer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .footerLeft {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-    }
 }
 
 
 @media screen and (max-width: 582px) {
     .timeContainer {
-        margin:0px !important;
+        margin: 0px !important;
     }
     .timeContainer h4 {
         font-size: 30px;
@@ -192,5 +219,3 @@
         font-size: 13px;
     }
 }
-
-
