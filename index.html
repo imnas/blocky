@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <!-- <link rel="stylesheet" href="css/timer.css?v=1.0"> -->
     <link rel="stylesheet" href="css/responsive.css?v=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -388,6 +390,84 @@
             <a href="#bodyContent"><i class="ion ion-arrow-down-b"></i> Learn More</a>
         </div>
     </section>
+    <div class="your-class">
+        <div class="individualNewsContainer">
+            <div class="newsLeft">
+                <div class="nLTop">
+                    <div class="postedAgo">5H</div>
+                </div>
+                <div class="titleContainerNl">
+                    Bitcoin reached $28,000 today! Read about it here...
+                </div>
+                <div class="authorContainer">
+                    <div class="authorLeft">
+                        <img src="https://i.gyazo.com/1b7b3dbb9cd9cee5110884f6abdd7579.png"/>
+                    </div>
+                    <div class="authorRight">
+                        <h4>Jay Antonopolous</h4>
+                        <a>@JAantanop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="newsRight">
+                <span class="videoOverlay"></span>
+                <div class="playContainer">
+                    <a><i class="ion ion-play"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="individualNewsContainer">
+                <div class="newsLeft">
+                    <div class="nLTop">
+                        <div class="postedAgo">5H</div>
+                    </div>
+                    <div class="titleContainerNl">
+                        Bitcoin reached $28,000 today! Read about it here...
+                    </div>
+                    <div class="authorContainer">
+                        <div class="authorLeft">
+                            <img src="https://i.gyazo.com/1b7b3dbb9cd9cee5110884f6abdd7579.png"/>
+                        </div>
+                        <div class="authorRight">
+                            <h4>Jay Antonopolous</h4>
+                            <a>@JAantanop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsRight">
+                    <span class="videoOverlay"></span>
+                    <div class="playContainer">
+                        <a><i class="ion ion-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        <div class="individualNewsContainer">
+                <div class="newsLeft">
+                    <div class="nLTop">
+                        <div class="postedAgo">5H</div>
+                    </div>
+                    <div class="titleContainerNl">
+                        Bitcoin reached $28,000 today! Read about it here...
+                    </div>
+                    <div class="authorContainer">
+                        <div class="authorLeft">
+                            <img src="https://i.gyazo.com/1b7b3dbb9cd9cee5110884f6abdd7579.png"/>
+                        </div>
+                        <div class="authorRight">
+                            <h4>Jay Antonopolous</h4>
+                            <a>@JAantanop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsRight">
+                    <span class="videoOverlay"></span>
+                    <div class="playContainer">
+                        <a><i class="ion ion-play"></i></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
     <div id="bodyContent" class="sectionContainer">
         <section class="commonSection">
             <div class="dualDivSectionHead">
@@ -533,8 +613,16 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.your-class').slick({
+            infinite: true,
+            slidesToShow: 2,
+          });
+        });
+    </script>
     <script>
         var rectNum = ['#rect1', '#rect2', '#rect3', '#rect4', '#rect5', '#rect6', '#rect7', '#rect8', '#rect9', '#rect10', '#rect11', '#rect12', '#rect13', '#rect14', '#rect15', '#rect16', '#rect17', '#rect1', '#rect2', '#rect3', '#rect4', '#rect5', '#rect6', '#rect7', '#rect8', '#rect9', '#rect10', '#rect11', '#rect12', '#rect13', '#rect14', '#rect15', '#rect16', '#rect17', '#rect18', '#rect19', '#rect20', '#rect21', '#rect22'];
         var classList = ['color1', 'color2'];

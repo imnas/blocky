@@ -37,7 +37,6 @@ body {
     -webkit-font-smoothing: antialiased;
     color: #101010;
     height: 100%;
-    color: #ffffff;
     overflow-x: hidden;
 }
 
@@ -142,6 +141,7 @@ body {
 .heroLeft h4 {
     font-size: 54px;
     font-weight: 100;
+    color:#fff;
 }
 
 .heroLeft p {
@@ -357,7 +357,7 @@ body {
 }
 
 .commonSection {
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1200px;
     margin: 0 auto;
@@ -773,3 +773,105 @@ div#coverageMap img {
     font-size: 30px;
     font-weight: 500;
 }
+.individualNewsContainer {
+    display: flex !important;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.newsRight img {
+    width: 370px;
+}
+.playContainer a {
+    font-size: 40px;
+    position:relative;
+    z-index:1;
+}
+.videoOverlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fda10e82;
+}
+.newsRight {
+    position:relative;
+    max-width: 370px;
+    width: 100%;
+    background-image: url(https://photos.travelblog.org/Photos/291166/846772/f/8063262-London-Bridge-selfie-0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorLeft img {
+    border-radius: 100%;
+    max-width: 50px;
+}
+.authorContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.authorRight {
+    margin-left: 15px;
+}
+.authorRight a {
+    font-weight: bold;
+    color: #ff9900;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: flex;
+}
+.titleContainerNl {
+    font-size: 27px;
+    font-weight: bold;
+}
+.nLTop {
+    margin-bottom: 25px;
+}
+.newsLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    background: white;
+    width:100%;
+}
+.postedAgo {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
