@@ -37,6 +37,7 @@ body {
     -webkit-font-smoothing: antialiased;
     color: #101010;
     height: 100%;
+    color: #ffffff;
     overflow-x: hidden;
 }
 
@@ -82,7 +83,6 @@ body {
     padding-right: 25px;
     height: 600px;
     position: Relative;
-    /* height: 100vh; */
     justify-content: space-between;
 }
 
@@ -125,7 +125,7 @@ body {
     opacity: 0.4;
 }
 
-.navRight ul a {
+.navRight ul>a {
     font-size: 16px;
     height: 42px;
     display: inline-flex;
@@ -141,7 +141,6 @@ body {
 .heroLeft h4 {
     font-size: 54px;
     font-weight: 100;
-    color:#fff;
 }
 
 .heroLeft p {
@@ -357,7 +356,7 @@ body {
 }
 
 .commonSection {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
     max-width: 1200px;
     margin: 0 auto;
@@ -557,7 +556,7 @@ body {
 .footerBottom>.bottomItem:last-child>ul>li:hover {
     box-shadow: 0 0 50px #00000030;
     background: #0a0d11;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .footerBottom>.bottomItem:last-child>ul {
@@ -773,105 +772,219 @@ div#coverageMap img {
     font-size: 30px;
     font-weight: 500;
 }
-.individualNewsContainer {
-    display: flex !important;
-    flex-direction: row;
-    margin: 0 auto;
+
+/*DropDown*/
+
+.dropbtn>div:last-child {
+    flex-direction: column;
+    align-items: flex-end;
 }
-.newsRight img {
-    width: 370px;
+
+.dropbtn {
+    background: #192028;
+    display: inline-flex;
+    padding: 0 15px;
+    height: 46px!important;
+    border-radius: 8px;
+    margin-right: 0!important;
 }
-.playContainer a {
-    font-size: 40px;
-    position:relative;
-    z-index:1;
-}
-.videoOverlay {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
+
+.dropbtn>hr {
     height: 100%;
-    background: #fda10e82;
+    align-items: center;
+    width: 2px;
+    color: black;
+    margin: auto 25px;
+    background: #131a22;
 }
-.newsRight {
-    position:relative;
-    max-width: 370px;
-    width: 100%;
-    background-image: url(https://photos.travelblog.org/Photos/291166/846772/f/8063262-London-Bridge-selfie-0.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
+
+.dropbtn>div:last-child>p {
+    font-size: 12px;
+    color: #32cf23;
+}
+
+.dropbtn>div:last-child>h1 {
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+}
+
+.dropbtn>div:first-child>i {
+    font-size: 14px;
+    margin-right: 7px;
+    color: #ffffff;
+}
+
+.dropbtn>div:first-child>h1 {
+    font-size: 17px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: auto;
+}
+
+.dropdown-content {
+    margin: auto;
+    display: none;
+    position: absolute;
+    top: 45px;
+    z-index: 300;
+}
+
+.dropdown {
+    display: inline-flex;
+}
+
+.dropbtn>div,
+.dropdown>hr {
+    display: inline-flex;
+    margin: auto;
     align-items: center;
 }
 
-.authorLeft img {
-    border-radius: 100%;
-    max-width: 50px;
-}
-.authorContainer {
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
+.dropdownMain {
+    display: inline-flex;
 }
 
-.authorRight {
-    margin-left: 15px;
+.blockyInput>input {
+    width: 100%;
+    background: none;
+    height: 100%;
+    color: #333;
 }
-.authorRight a {
-    font-weight: bold;
-    color: #ff9900;
-    text-transform: uppercase;
-    font-size: 13px;
+
+.dropdown-content>li {
+    border-radius: 5px;
+    height: 46px;
+    margin-top: 13px;
     display: flex;
 }
-.titleContainerNl {
-    font-size: 27px;
-    font-weight: bold;
+
+.blockyInput {
+    background: #ffffff!important;
+    height: 40px!important;
+    align-items: center;
+    padding: 0 15px;
 }
-.nLTop {
-    margin-bottom: 25px;
+
+.dropdown-content>li>a {
+    margin: auto 0;
 }
+
+.blockyInput>i {
+    color: #333;
+}
+
+.blockyInput>input::placeholder {
+    color: #848484;
+}
+
+.newsSlider {
+    background-color: #0c1013;
+}
+
+.newsContainer {
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 100%;
+    padding: 40px;
+}
+
+.newsItem {
+    display: inline-flex;
+    flex: 1;
+    margin: auto 50px;
+    overflow: hidden;
+    background-color: #060709;
+    border-radius: 15px;
+    transition: 0.25s all ease-in-out;
+}
+
 .newsLeft {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 25px;
-    background: white;
-    width:100%;
-}
-.postedAgo {
-    font-weight: bold;
+    flex: 0.66;
+    padding: 19px 30px;
 }
 
+.newsLeft>p {
+    font-size: 13px;
+    color: #C4C4C4;
+}
 
+.newsLeft>h1 {
+    font-size: 19px;
+    line-height: 29px;
+    font-weight: 500;
+    margin: 11px auto;
+}
 
+.newsLeft>a {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFC665;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    position: relative;
+    bottom: 2px;
+}
 
+.newsRight {
+    flex: 0.6;
+    text-align: right;
+    height: 0;
+}
 
+.newsPoster>div>p {
+    font-size: 13px;
+    color: #EDEDED;
+}
 
+.newsPoster>div>a {
+    font-weight: 600;
+    font-size: 11px;
+    color: #FFC886;
+}
 
+.newsPoster {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 17px;
+}
 
+.newsRight>img {
+    width: 270px;
+    position: relative;
+    border-radius: 100px 0 0 0;
+}
 
+.newsPoster>img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-left: 10px;
+}
 
+.newsLeft>a>i {
+    font-size: 30px;
+    position: relative;
+    top: 7px;
+    left: 4px;
+    color: white;
+}
 
+.newsItem {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.newsItem:hover,
+.newsItem:focus,
+.newsItem:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
