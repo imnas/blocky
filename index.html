@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css?v=4">
     <!-- <link rel="stylesheet" href="css/timer.css?v=1.0"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -358,6 +360,9 @@
                             </div>
                         </a>
                         <div class="dropdown-content" id="blockyDropdown">
+                            <div class="defaultCoinChart">
+                                    <div id="container" style="height: 200px;"></div>
+                            </div>
                             <li class="blockyInput">
                                 <input type="text" placeholder="Search..." />
                                 <i class="icon ion-ios-search-strong"></i>
@@ -463,7 +468,7 @@
                         </div>
                         <img src="media/newsPoster.png" alt="">
                     </div>
-                    <img src="media/newsBackground.png" alt="">
+                    <div class="actualPoster"></div>
                 </div>
             </div>
             <div class="newsItem">
@@ -481,7 +486,7 @@
                         </div>
                         <img src="media/newsPoster.png" alt="">
                     </div>
-                    <img src="media/newsBackground.png" alt="">
+                    <div class="actualPoster"></div>
                 </div>
             </div>
             <div class="newsItem">
@@ -499,7 +504,7 @@
                         </div>
                         <img src="media/newsPoster.png" alt="">
                     </div>
-                    <img src="media/newsBackground.png" alt="">
+                    <div class="actualPoster"></div>
                 </div>
             </div>
 
@@ -650,8 +655,86 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
 
+    <script>
+    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function (data) {
+    // Create the chart
+    Highcharts.stockChart('container', {
+
+
+        yAxis: {
+        gridLineWidth: 1,
+        gridLineColor: '#192028',
+     tickColor: '#192028',
+        lineWidth:0,
+     lineColor:'#192028'
+    },
+    xAxis: {
+        gridLineWidth: 0,
+        gridLineColor: '#192028',
+     tickColor: '#192028',
+        lineWidth:0,
+     lineColor:'#192028'
+    },
+chart: {
+    borderRadius: 3,
+    backgroundColor: 'transparent',
+    className: 'coinChart',
+    borderColor:'pink',
+    
+},
+zoom: {
+    enabled: false
+},
+rangeSelector: {
+    selected: 4,
+    inputEnabled: false,
+    buttonTheme: {
+        visibility: 'hidden'
+    },
+    labelStyle: {
+        visibility: 'hidden'
+    }
+},
+          credits: {
+      enabled: false
+  },
+        scrollbar: {
+         enabled: false
+        },
+        
+        navigator: {
+         enabled: false
+        },
+        title: {
+            text: '',
+            style: 
+                { "color": "#333333", "fontSize": "184px" },
+            
+        },
+
+        series: [{
+            name: '',
+            data: data,
+            tooltip: {
+                valueDecimals: 2
+            }
+        }]
+    });
+});
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.newsContainer').slick({
+            infinite: true,
+            slidesToShow: 3,
+          });
+        });
+    </script>
     <script>
         var rectNum = ['#rect1', '#rect2', '#rect3', '#rect4', '#rect5', '#rect6', '#rect7', '#rect8', '#rect9', '#rect10', '#rect11', '#rect12', '#rect13', '#rect14', '#rect15', '#rect16', '#rect17', '#rect1', '#rect2', '#rect3', '#rect4', '#rect5', '#rect6', '#rect7', '#rect8', '#rect9', '#rect10', '#rect11', '#rect12', '#rect13', '#rect14', '#rect15', '#rect16', '#rect17', '#rect18', '#rect19', '#rect20', '#rect21', '#rect22'];
         var classList = ['color1', 'color2'];
