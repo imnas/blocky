@@ -895,7 +895,7 @@ div#coverageMap img {
     flex: 1;
     margin: auto 50px;
     overflow: hidden;
-    background-color: #060709;
+    background-color: #131a22;
     border-radius: 15px;
     transition: 0.25s all ease-in-out;
 }
