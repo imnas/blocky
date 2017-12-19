@@ -313,6 +313,10 @@ body {
     margin-top: 50px;
 }
 
+.slick-list {
+    overflow: unset!important;
+}
+
 #bgMedia {
     position: absolute;
     bottom: 0px;
@@ -729,7 +733,6 @@ body {
     padding-top: 22px;
     padding-bottom: 20px;
     display: flex;
-    overflow: scroll;
 }
 
 .socialContainer img {
@@ -833,20 +836,23 @@ div#coverageMap img {
     padding: 25px;
     margin-top: 20px;
     border-radius: 3px;
-    padding-top:0px;
+    padding-top: 0px;
 }
 
 .dropdown {
     display: inline-flex;
 }
+
 .coinChart text {
     font-weight: bold;
     color: #fff !important;
     fill: #fff !important;
 }
+
 .coinChart path.highcharts-graph {
     stroke: #f9b028 !important;
 }
+
 .dropbtn>div,
 .dropdown>hr {
     display: inline-flex;
@@ -863,6 +869,7 @@ div#coverageMap img {
     background: none;
     height: 100%;
     color: #333;
+    font-size: 1rem;
 }
 
 .dropdown-content>li {
@@ -894,14 +901,19 @@ div#coverageMap img {
 .newsSlider {
     background-color: #0e1319;
 }
+
 /* the slides */
+
 .slick-slide {
     margin: 0 25px;
 }
+
 /* the parent */
+
 .slick-list {
     margin: 0 -25px;
 }
+
 .newsContainer {
     display: flex;
     padding-left: 25px;
@@ -912,13 +924,14 @@ div#coverageMap img {
 
 .newsItem {
     display: flex !important;
-    flex-direction:row;
+    flex-direction: row;
     flex: 1;
+    margin: 0 30px;
     overflow: hidden;
     background-color: #131a22;
     border-radius: 3px;
     transition: 0.25s all ease-in-out;
-    height:205px;
+    height: 205px;
 }
 
 .newsLeft {
@@ -952,7 +965,7 @@ div#coverageMap img {
     flex: 0.6;
     text-align: right;
     height: 0;
-    position:Relative;
+    position: Relative;
 }
 
 .newsPoster>div>p {
@@ -974,7 +987,6 @@ div#coverageMap img {
 
 .newsRight>img {
     width: 270px;
-    position: absolute;
     border-radius: 4px 0 0 0;
     right: 0px;
 }
@@ -1018,10 +1030,10 @@ div#coverageMap img {
 
 
 .actualPoster {
-    background-image: -webkit-gradient( linear, left top, left bottom, from(#2930389c), to(#2930389c) ), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
-    background-image: -webkit-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
-    background-image: -o-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
-    background-image: linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#2930389c), to(#2930389c)), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -webkit-linear-gradient( #2930389c, #2930389c), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -o-linear-gradient( #2930389c, #2930389c), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: linear-gradient( #2930389c, #2930389c), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
     background-size: cover;
     background-position: center center;
     height: 142px;
@@ -1031,6 +1043,3 @@ div#coverageMap img {
     position: absolute;
     width: 100%;
 }
-
-
-

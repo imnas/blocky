@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css?v=4">
+    <link rel="stylesheet" href="css/styles.css?v=6">
     <!-- <link rel="stylesheet" href="css/timer.css?v=1.0"> -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css?v=1">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -361,7 +361,7 @@
                         </a>
                         <div class="dropdown-content" id="blockyDropdown">
                             <div class="defaultCoinChart">
-                                    <div id="container" style="height: 200px;"></div>
+                                <div id="container" style="height: 200px;"></div>
                             </div>
                             <li class="blockyInput">
                                 <input type="text" placeholder="Search..." />
@@ -370,7 +370,6 @@
                             <li>
                                 <a class="dropbtn">
                                     <div>
-                                        <i class="icon ion-arrow-down-b"></i>
                                         <h1>BTC</h1>
                                     </div>
                                     <hr>
@@ -383,7 +382,6 @@
                             <li>
                                 <a class="dropbtn">
                                     <div>
-                                        <i class="icon ion-arrow-down-b"></i>
                                         <h1>BTC</h1>
                                     </div>
                                     <hr>
@@ -396,7 +394,6 @@
                             <li>
                                 <a class="dropbtn">
                                     <div>
-                                        <i class="icon ion-arrow-down-b"></i>
                                         <h1>BTC</h1>
                                     </div>
                                     <hr>
@@ -468,7 +465,7 @@
                         </div>
                         <img src="media/newsPoster.png" alt="">
                     </div>
-                    <div class="actualPoster"></div>
+                    <img src="media/newsBackground.png" alt="">
                 </div>
             </div>
             <div class="newsItem">
@@ -486,7 +483,7 @@
                         </div>
                         <img src="media/newsPoster.png" alt="">
                     </div>
-                    <div class="actualPoster"></div>
+                    <img src="media/newsBackground.png" alt="">
                 </div>
             </div>
             <div class="newsItem">
@@ -504,7 +501,7 @@
                         </div>
                         <img src="media/newsPoster.png" alt="">
                     </div>
-                    <div class="actualPoster"></div>
+                    <img src="media/newsBackground.png" alt="">
                 </div>
             </div>
 
@@ -660,79 +657,101 @@
     <script src="https://code.highcharts.com/stock/highstock.js"></script>
 
     <script>
-    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function (data) {
-    // Create the chart
-    Highcharts.stockChart('container', {
+        $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function(data) {
+            // Create the chart
+            Highcharts.stockChart('container', {
 
 
-        yAxis: {
-        gridLineWidth: 1,
-        gridLineColor: '#192028',
-     tickColor: '#192028',
-        lineWidth:0,
-     lineColor:'#192028'
-    },
-    xAxis: {
-        gridLineWidth: 0,
-        gridLineColor: '#192028',
-     tickColor: '#192028',
-        lineWidth:0,
-     lineColor:'#192028'
-    },
-chart: {
-    borderRadius: 3,
-    backgroundColor: 'transparent',
-    className: 'coinChart',
-    borderColor:'pink',
-    
-},
-zoom: {
-    enabled: false
-},
-rangeSelector: {
-    selected: 4,
-    inputEnabled: false,
-    buttonTheme: {
-        visibility: 'hidden'
-    },
-    labelStyle: {
-        visibility: 'hidden'
-    }
-},
-          credits: {
-      enabled: false
-  },
-        scrollbar: {
-         enabled: false
-        },
-        
-        navigator: {
-         enabled: false
-        },
-        title: {
-            text: '',
-            style: 
-                { "color": "#333333", "fontSize": "184px" },
-            
-        },
+                yAxis: {
+                    gridLineWidth: 1,
+                    gridLineColor: '#192028',
+                    tickColor: '#192028',
+                    lineWidth: 0,
+                    lineColor: '#192028'
+                },
+                xAxis: {
+                    gridLineWidth: 0,
+                    gridLineColor: '#192028',
+                    tickColor: '#192028',
+                    lineWidth: 0,
+                    lineColor: '#192028'
+                },
+                chart: {
+                    borderRadius: 3,
+                    backgroundColor: 'transparent',
+                    className: 'coinChart',
+                    borderColor: 'pink',
 
-        series: [{
-            name: '',
-            data: data,
-            tooltip: {
-                valueDecimals: 2
-            }
-        }]
-    });
-});
+                },
+                zoom: {
+                    enabled: false
+                },
+                rangeSelector: {
+                    selected: 4,
+                    inputEnabled: false,
+                    buttonTheme: {
+                        visibility: 'hidden'
+                    },
+                    labelStyle: {
+                        visibility: 'hidden'
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                scrollbar: {
+                    enabled: false
+                },
+
+                navigator: {
+                    enabled: false
+                },
+                title: {
+                    text: '',
+                    style: { "color": "#333333", "fontSize": "184px" },
+
+                },
+
+                series: [{
+                    name: '',
+                    data: data,
+                    tooltip: {
+                        valueDecimals: 2
+                    }
+                }]
+            });
+        });
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function(){
-          $('.newsContainer').slick({
-            infinite: true,
+        $('.newsContainer').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
             slidesToShow: 3,
-          });
+            slidesToScroll: 3,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 650,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
     </script>
     <script>
