@@ -760,7 +760,7 @@ a:active {
 
 .socialContainer img {
     width: 101px;
-    transition: all 0.25s ease-in-out;
+
     opacity: 0.4;
     margin: 0 20px;
 }
