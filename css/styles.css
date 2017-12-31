@@ -162,13 +162,13 @@ body {
 }
 
 .navRight ul>a {
-    font-size: 16px;
+    font-size: 15px;
     height: 42px;
     display: inline-flex;
     align-items: center;
     margin-right: 10px;
     letter-spacing: 0px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .navRight ul>a:hover,
@@ -427,10 +427,10 @@ a:active {
 }
 
 .sectionHeader h4 {
-    font-size: 38px;
+    font-size: 32px;
     letter-spacing: -1px;
     color: #fff;
-    font-weight: 900;
+    font-weight: 700;
     margin: 0 0 5px;
     line-height: 1.26;
     margin-bottom: 9px;
@@ -455,7 +455,7 @@ a:active {
 }
 
 .sectionHeader p {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.63;
     letter-spacing: -0.3px;
     font-weight: 400;
@@ -465,7 +465,7 @@ a:active {
 }
 
 .actualSection p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.83;
     letter-spacing: 0.1px;
     color: #e3e3e3;
@@ -475,8 +475,8 @@ a:active {
 }
 
 .actualSection h4 {
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -527,15 +527,15 @@ a:active {
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .footerRight ul a {
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 15px;
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .footerContainer {
@@ -736,7 +736,7 @@ a:active {
 }
 
 .contactContainer {
-    max-width: 900px!important;
+    max-width: 1200px!important;
     margin: 0 auto;
     margin-top: 60px;
 }
@@ -806,9 +806,8 @@ div#coverageMap img {
 }
 
 .dropbtn {
-    background: #1a212a;
+    background: #1c252f;
     display: inline-flex;
-    box-shadow: 0 0 30px #080a0d0a;
     padding: 0 18px;
     height: 46px!important;
     border-radius: 5px;
@@ -855,11 +854,12 @@ div#coverageMap img {
     position: absolute;
     top: 45px;
     z-index: 300;
-    background: #0e1319;
+    background: #1c252f;
     padding: 25px;
     margin-top: 20px;
     border-radius: 3px;
     padding-top: 0px;
+    right:0px;
 }
 
 .dropdown {
@@ -892,6 +892,7 @@ div#coverageMap img {
     background: none;
     height: 100%;
     color: white;
+    background:#131a22;
     font-size: 0.85rem;
 }
 
@@ -903,7 +904,7 @@ div#coverageMap img {
 }
 
 .blockyInput {
-    background: #32383f!important;
+    background: #131a22 !important;
     height: 40px!important;
     align-items: center;
     padding: 0 15px;
@@ -946,8 +947,9 @@ div#coverageMap img {
     display: flex;
     height: 100%;
     padding: 50px 0;
-    margin: auto;
-    max-width: 1200px;
+    max-width:1200px;
+    margin:0 auto;
+    overflow: hidden;
 }
 
 .newsItem {
@@ -1050,7 +1052,9 @@ div#coverageMap img {
 
 
 
-
+#blockyDropdown .dropbtn {
+    background: #131a22 !important;
+}
 .actualPoster {
     background-image: -webkit-gradient( linear, left top, left bottom, from(#2930389c), to(#2930389c)), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
     background-image: -webkit-linear-gradient( #2930389c, #2930389c), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
@@ -1072,6 +1076,8 @@ div#coverageMap img {
     background-color: rgb(22, 28, 35);
     padding: 34px 0px;
     margin: 50px -25px;
+    padding-left:25px;
+    padding-right:25px;
 }
 
 .commonSection>div:not(:nth-child(3)) {
@@ -1149,7 +1155,6 @@ div#coverageMap img {
 .twitterContainer {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .twitterFooter>ul>li {

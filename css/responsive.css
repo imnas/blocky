@@ -222,8 +222,12 @@
     body {
         overflow-x: hidden;
     }
+    .newsSlider {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     .newsItem {
-        width: 90%!important;
+        width: 100%!important;
         margin: auto;
     }
     .twitterItem {
