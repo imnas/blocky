@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 * {
@@ -9,7 +9,8 @@
     list-style: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Maven Pro', sans-serif;
+    -webkit-font-smoothing: antialiased!important;
+    font-family: 'Open Sans', sans-serif;
     /* line-height: 17px; */
 }
 
@@ -29,11 +30,12 @@ a {
 
 html {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
     background: #f2f5f7;
-    font-family: "Maven Pro", Arial;
+    font-family: "Open Sans", Arial;
     -webkit-font-smoothing: antialiased;
     color: #101010;
     height: 100%;
@@ -118,11 +120,10 @@ body {
 }
 
 .subscribeContainer span {
-    font-size: 12px;
+    font-size: 13px;
     display: block;
     margin-top: 10px;
-    color: #ffffff;
-    opacity: 0.4;
+    color: #aeaeae;
 }
 
 .navRight ul>a {
@@ -130,8 +131,19 @@ body {
     height: 42px;
     display: inline-flex;
     align-items: center;
+    margin-right: 10px;
+    letter-spacing: 0px;
     /* color: rgba(255,255,255,0.6); */
     font-weight: 500;
+}
+
+.navRight ul>a:hover,
+a:focus,
+a:active {
+    font-weight: bold;
+    color: #ececec;
+    letter-spacing: -0.6px;
+    transition: 0.25s all ease-in-out;
 }
 
 .navRight ul a:not(:last-child) {
@@ -139,46 +151,48 @@ body {
 }
 
 .heroLeft h4 {
-    font-size: 54px;
-    font-weight: 100;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .heroLeft p {
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: -0.3px;
-    color: #ffffff;
-    margin: 21px 0 48px;
-    opacity: .4;
+    color: #e6e6e6;
+    margin: 10px 0 40px;
     width: 100%;
+    font-weight: 400;
     text-align: left;
 }
 
 .homeTopInput {
-    height: 65px;
-    border-radius: 3px;
+    height: 59px;
+    border-radius: 4px;
     background-color: #ffffff;
     -webkit-box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.08), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.08), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border: 0;
+    border: none!important;
     outline: 0;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.75;
     letter-spacing: -0.3px;
     text-align: left;
     color: #131a22;
-    padding: 0 20px 0 75px;
+    padding: 0 20px 0 72px;
     margin-bottom: 5px;
-    /* max-width: 477px; */
+    max-width: 477px;
     width: 100%;
 }
 
 .btnHome {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: -0.3px;
     color: #ffffff;
-    padding: 17px 32px;
+    padding: 12px 26px;
     border-radius: 4px;
     background: rgba(255, 153, 0, 1);
     background: -moz-linear-gradient(left, rgba(255, 153, 0, 1) 0%, rgba(247, 183, 51, 1) 100%);
@@ -189,8 +203,8 @@ body {
     background: linear-gradient(to right, rgba(255, 153, 0, 1) 0%, rgba(247, 183, 51, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1);
     position: absolute;
-    right: 5px;
-    top: 7px;
+    right: 33px;
+    top: 8px;
     text-transform: uppercase;
 }
 
@@ -218,7 +232,8 @@ body {
     position: absolute;
     color: #b7b7b7;
     left: 25px;
-    top: 13px;
+    top: 11px;
+    margin: auto;
     font-size: 40px;
 }
 
@@ -239,6 +254,7 @@ body {
     color: #ffffff;
     position: relative;
     flex-direction: row;
+    margin-bottom: 20px;
     height: 82px;
     /* width: 146px; */
 }
@@ -362,13 +378,16 @@ body {
 .commonSection {
     padding-top: 40px;
     padding-bottom: 80px;
-    max-width: 1200px;
     margin: 0 auto;
     color: #131a22;
 }
 
 .heroLeft h4 span {
     color: #ff9900;
+    display: block;
+    font-weight: 900;
+    font-size: 58px;
+    letter-spacing: 1px;
 }
 
 .learnMoreSection {
@@ -394,19 +413,19 @@ body {
 .sectionHeader h4 {
     font-size: 40px;
     letter-spacing: -1px;
-    color: #101010;
-    font-weight: 500;
+    color: #333;
+    font-weight: 900;
     margin: 0 0 5px;
     line-height: 1.26;
     margin-bottom: 4px;
 }
 
 .sectionHeader h5 {
-    font-size: 28px;
+    font-size: 18px;
     line-height: 1.19;
-    letter-spacing: -1px;
+    letter-spacing: -0.2px;
     color: #8fa9b0;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .sectionHeader {
@@ -420,7 +439,9 @@ body {
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: -0.3px;
-    color: #8fa9b0;
+    font-weight: 400;
+    text-align: center;
+    color: #a3bac1;
     margin: 10px 0 50px;
 }
 
@@ -603,7 +624,7 @@ body {
     content: '';
     width: 12px;
     height: 12px;
-    background: #131a22;
+    background: #000000b8;
     position: absolute;
     left: 29px;
     top: 29px;
@@ -678,7 +699,7 @@ body {
     border-radius: 3px;
     font-size: 16px;
     padding: 25px;
-    -webkit-box-shadow: inset 0 -1px 0 0 rgba(149, 173, 178, 0.29), inset 0 1px 0 0 rgba(149, 173, 178, 0.29);
+    /* -webkit-box-shadow: inset 0 -1px 0 0 rgba(149, 173, 178, 0.29), inset 0 1px 0 0 rgba(149, 173, 178, 0.29); */
     box-shadow: inset 0 -1px 0 0 rgba(149, 173, 178, 0.29), inset 0 1px 0 0 rgba(149, 173, 178, 0.29);
     margin-top: 25px;
 }
@@ -733,6 +754,7 @@ body {
     padding-top: 22px;
     padding-bottom: 20px;
     display: flex;
+    overflow: scroll;
 }
 
 .socialContainer img {
@@ -1042,4 +1064,176 @@ div#coverageMap img {
     right: 0px;
     position: absolute;
     width: 100%;
+}
+
+/*twitter*/
+
+#twitter {
+    background-color: rgb(14, 17, 21);
+    margin: 50px -25px;
+    padding: 34px 0;
+}
+
+.commonSection>div:not(:nth-child(3)) {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.twitterMain {
+    display: flex!important;
+    margin-top: 30px;
+}
+
+.twitterItem {
+    flex-direction: row;
+    padding: 26px 30px;
+    background-color: #0a0c0f;
+    border-radius: 10px;
+    transition: 0.25s all ease-in-out;
+}
+
+.slick-slide {
+    margin: 0 25px;
+}
+
+.slick-list {
+    margin: 0 -25px!important;
+}
+
+.twitterHead>div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 15px;
+}
+
+.twitterBody {
+    margin: 18px 0;
+}
+
+.twitterHead {
+    display: flex;
+    flex-direction: row;
+}
+
+.twitterHead>div>h1 {
+    font-weight: 900;
+    color: white;
+}
+
+.twitterHead>p {
+    padding: 10px;
+    font-size: 0.96rem;
+    color: #dadada;
+}
+
+.twitterHead>img {
+    width: 65px;
+    height: 60px;
+}
+
+.twitterHead>div>a {
+    color: silver;
+    font-size: 0.8rem;
+    letter-spacing: 0.2px;
+}
+
+.twitterBody>p {
+    font-size: 0.95rem;
+    line-height: 34px;
+    color: white;
+    letter-spacing: 0.1px;
+}
+
+.twitterContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.twitterFooter>ul>li {
+    display: inline-block;
+}
+
+.twitterFooter>ul>li>a {
+    background-color: #0e1115;
+    padding: 8px 20px;
+    font-weight: 900;
+    font-size: 15px;
+    height: 40px;
+    text-align: left;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-right: 15px;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    bottom: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+.twitterFooter>ul>li>a:hover {
+    background-color: #ef9816!important;
+    color: #fff;
+    position: relative;
+    bottom: 5px;
+}
+
+.twitterFooter>ul>li>a>span {
+    width: 32px;
+    height: 32px;
+    margin-left: 25px;
+}
+
+.twitterFooter>ul>li:first-of-type>a>span {
+    width: 22px;
+}
+
+.twitterFooter>ul>li:first-of-type>a>span {
+    background: url("../media/share-button-color.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.twitterFooter>ul>li:nth-child(2)>a>span {
+    background: url("../media/eye-icon-color.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.twitterFooter>ul>li:last-of-type>a>span {
+    background: url("../media/retweet-icon-color.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.twitterFooter>ul>li:first-of-type>a:hover>span {
+    background: url("../media/share-button-white.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.twitterFooter>ul>li:nth-child(2)>a:hover>span {
+    background: url("../media/eye-icon-white.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.twitterFooter>ul>li:last-of-type>a:hover>span {
+    background: url("../media/retweet-icon-white.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.twitterFooter>ul>li:not(:first-of-type)>a>span {
+    margin-left: 25px;
+}
+
+.twitterHeader {
+    margin: auto;
+    color: white;
+}
+
+.twitterHeader>h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.twitterHeader>h5 {
+    font-weight: 100;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }

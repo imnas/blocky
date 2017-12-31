@@ -126,13 +126,13 @@
 
 .burgerMenu span {
     display: block;
-    width: 35px;
-    height: 3px;
+    width: 30px;
+    height: 2px;
     background: white;
 }
 
 .burgerMenu span:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .navRight {
@@ -141,21 +141,22 @@
 }
 
 .actualMobileNav a {
-    color: black;
-    font-weight: 700;
-    font-size: 21px;
-    padding: 15px;
-    background: white;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 14px 22px;
 }
 
 .actualMobileNav {
     position: absolute;
-    top: 40px;
+    top: 50px;
     right: 0px;
+    border-radius: 6px;
+    background: #07090c;
     display: flex;
     flex-direction: column;
     z-index: 100;
-    min-width: 200px;
+    min-width: 180px;
 }
 
 @media screen and (min-width:900px) {
@@ -187,16 +188,36 @@
         justify-content: flex-end;
     }
     .footerBottom>.bottomItem:last-child>ul>li {
-        flex-basis: 8%;
+        flex-basis:8%;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .homeTopInput {
+        font-size:14px;
+            padding: 0 20px 0 70px;
+    }
+    .timeContainer h4 span {
+        padding:0!important;
+        font-weight:100;
+        font-size:0.9rem!important;
+        letter-spacing:0.6px
+        text-align:center!important;
+    }
+    .heroRight {
+    margin-bottom: 40px;
+}
+    .subscribeContainer span {text-align:center}
     .sectionHeader h4 {
         font-size: 34px;
+        font-weight: bolder;
+        text-align: center;
     }
     .sectionHeader h5 {
-        font-size: 25px;
+        font-size: 19px;
+        line-height: 1.6;
+        text-align: center;
+        font-weight: 500;
     }
     .mobileNav {
         display: flex;
@@ -221,7 +242,19 @@
         background: transparent !important;
     }
     .timeContainer h4 {
-        font-size: 35px;
+        font-size: 40px!important;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    .btnHome {
+        padding: 12px 19px;
+        margin: auto;
+        top: 11px;
+        font-size: 13px;
+        font-weight: bold;
     }
     .timeContainer:nth-child(2) {
         margin-left: 5px;
@@ -236,11 +269,19 @@
     .heroLeft h4 {
         text-align: center;
         font-size: 37px;
+        font-weight: bolder;
+        text-transform: uppercase;
     }
 }
 
 
 @media screen and (max-width: 582px) {
+    .footerContainer {
+        padding:20px 30px;
+    }
+    .footerBottom>.bottomItem:last-child>ul>li {
+        margin:0 10px;
+    }
     .timeContainer {
         margin: 0px !important;
     }
@@ -265,9 +306,5 @@
     .typeOfUser p:last-child {
         margin-left: 0px;
         margin-top: 25px;
-    }
-    .btnHome {
-        padding: 18px 18px;
-        font-size: 13px;
     }
 }

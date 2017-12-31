@@ -448,7 +448,7 @@
             <a href="#bodyContent"><i class="ion ion-arrow-down-b"></i> Learn More</a>
         </div>
     </section>
-    <div class="newsSlider">
+    <div class="newsSlider responsive">
         <div class="newsContainer">
             <div class="newsItem">
                 <div class="newsLeft">
@@ -527,7 +527,7 @@
                                 <i class="ion ion-cube"></i>
                                 <h4>Blockchain education</h4>
                             </div>
-                            <p>Blocky.my answers and delivers tutorials, recommendations and tools for everyone, from crypto-evangelists to new cryptocurrency users</p>
+                            <p>Blocky.my answers and delivers tutorials, recommendations, and tools for everyone, from crypto-evangelists to new cryptocurrency users</p>
                         </div>
                     </div>
                     <div class="featureIndividual">
@@ -565,6 +565,59 @@
                     <img src="media/asiamap.svg" />
                 </div>
             </div>
+
+            <div id="twitter">
+                <div class="twitterContainer">
+                    <div class="twitterHeader">
+                        <h4>Our Twitter</h4>
+                        <h5>View our recent tweets and keep up-to-date.</h5>
+                    </div>
+                    <div class="twitterMain">
+                        <div class="twitterItem">
+                            <div class="twitterHead">
+                                <img src="media/blockylogo2.png" alt="">
+                                <div>
+                                    <h1>Blocky.my</h1>
+                                    <a href="#">@blockymysupport</a>
+                                </div>
+                                <p>33m</p>
+                            </div>
+                            <div class="twitterBody">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.</p>
+                            </div>
+                            <div class="twitterFooter">
+                                <ul>
+                                    <li><a href="#">Share <span></a></li>
+                                    <li><a href="#">View <span></a></li>
+                                    <li><a href="#">Retweet <span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="twitterItem">
+                            <div class="twitterHead">
+                                <img src="media/blockylogo2.png" alt="">
+                                <div>
+                                    <h1>Blocky.my</h1>
+                                    <a href="#">@blockymysupport</a>
+                                </div>
+                                <p>33m</p>
+                            </div>
+                            <div class="twitterBody">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.</p>
+                            </div>
+                            <div class="twitterFooter">
+                                <ul>
+                                    <li><a href="#">Share <span></a></li>
+                                    <li><a href="#">View <span></a></li>
+                                    <li><a href="#">Retweet <span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="contact" class="contactContainer">
                 <div class="sectionHeader">
                     <h4>Get in touch</h4>
@@ -734,6 +787,35 @@
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 650,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        $('.twitterMain').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
                         slidesToScroll: 1
                     }
                 },
