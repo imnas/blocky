@@ -6,8 +6,13 @@
     <meta charset="utf-8">
 
     <title>Blocky.my</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css?v=6">
     <!-- <link rel="stylesheet" href="css/timer.css?v=1.0"> -->
@@ -38,12 +43,16 @@
 
                 }
                 .color2 {
-                    fill:#9b59b6;
+                    fill: #561ad7;
+
+                }
+                .color3 {
+                    fill: #27ce57;
 
                 }
                 polygon {
-                    transition-timing-function: cubic-bezier(1, 0.5, 0, 1);
-                    transition-duration: 0.5s;
+                    transition-timing-function: ease-in-out;
+                    transition-duration: 1s;
                 }
               </style>
             </defs>
@@ -407,12 +416,71 @@
                     </div>
                 </ul>
                 <div class="mobileNav">
-                    <a class="burgerMenu"><span></span><span></span><span></span></a>
-                    <div class="actualMobileNav">
+                    <a class="nav-toggle">
+                        <span class="bar-top"></span>
+                        <span class="bar-mid"></span>
+                        <span class="bar-bot"></span>
+                    </a>
+                    <ul class="actualMobileNav">
                         <a href="index.html">Home</a>
                         <a href="#bodyContent">Features</a>
                         <a href="#coverageMap">Coverage map</a>
                         <a href="#contact">Contact us</a>
+                        <div class="dropdownMain">
+                            <a class="dropbtn">
+                                <div>
+                                    <i class="icon ion-arrow-down-b"></i>
+                                    <h1>BTC</h1>
+                                </div>
+                                <hr>
+                                <div>
+                                    <p>20.34%</p>
+                                    <h1>$12,345.00</h1>
+                                </div>
+                            </a>
+                            <div class="dropdown-content" id="blockyDropdown">
+                                <li class="blockyInput">
+                                    <input type="text" placeholder="Search..." />
+                                    <i class="icon ion-ios-search-strong"></i>
+                                </li>
+                                <li>
+                                    <a class="dropbtn">
+                                        <div>
+                                            <h1>BTC</h1>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <p>20.34%</p>
+                                            <h1>$12,345.00</h1>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropbtn">
+                                        <div>
+                                            <h1>BTC</h1>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <p>20.34%</p>
+                                            <h1>$12,345.00</h1>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropbtn">
+                                        <div>
+                                            <h1>BTC</h1>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <p>20.34%</p>
+                                            <h1>$12,345.00</h1>
+                                        </div>
+                                    </a>
+                                </li>
+                            </div>
+                    </ul>
                     </div>
                 </div>
             </div>
@@ -424,7 +492,7 @@
                 <div class="subscribeContainer">
                     <i class="ion ion-ios-email-outline"></i>
                     <input class="homeTopInput" name="email" placeholder="Type your email address..." type="text" id="email">
-                    <button class="btnHome" type="submit" id="emailSubmit">Get started</button>
+                    <button class="btnHome btn-arrow" type="submit" id="emailSubmit"><span>Get Started<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></button>
                     <span>* We will never send spam to your email</span>
                 </div>
             </div>
@@ -448,7 +516,7 @@
             <a href="#bodyContent"><i class="ion ion-arrow-down-b"></i> Learn More</a>
         </div>
     </section>
-    <div class="newsSlider responsive">
+    <div class="newsSlider">
         <div class="newsContainer">
             <div class="newsItem">
                 <div class="newsLeft">
@@ -504,7 +572,24 @@
                     <img src="media/newsBackground.png" alt="">
                 </div>
             </div>
+            <div class="newsItem">
+                <div class="newsLeft">
+                    <p>Posted 3 days ago</p>
+                    <h1>Bitcoin reaches a high of $32,000 in a span of 3 weeks.</h1>
+                    <a href="#">Read Article <i class="ion ion-ios-arrow-thin-right"></i></a>
+                </div>
 
+                <div class="newsRight">
+                    <div class="newsPoster">
+                        <div>
+                            <p>Jay Antonopolous</p>
+                            <a href="#">@JAANTANOP</a>
+                        </div>
+                        <img src="media/newsPoster.png" alt="">
+                    </div>
+                    <img src="media/newsBackground.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
     <div id="bodyContent" class="sectionContainer">
@@ -512,7 +597,7 @@
             <div class="dualDivSectionHead">
                 <div class="sectionHeader">
                     <h4>Blocky is a blockchain media hub</h4>
-                    <h5>Building Blockchain and Cryptocurrency communities and empowering them through education</h5>
+                    <!--<h5>Building Blockchain and Cryptocurrency communities and empowering them through education</h5>-->
                     <p>Blocky.my will produce unbiased and unique articles, videos and social media content designed to entertain, educate and inform.</p>
                 </div>
                 <div class="formContainerSectionHead">
@@ -577,40 +662,39 @@
                             <div class="twitterHead">
                                 <img src="media/blockylogo2.png" alt="">
                                 <div>
-                                    <h1>Blocky.my</h1>
-                                    <a href="#">@blockymysupport</a>
+                                    <h1>{{tweet_profileName_1}}</h1>
+                                    <a href="{{tweet_accountLink_1}}">{{tweet_screenName_1}}</a>
                                 </div>
-                                <p>33m</p>
+                                <p>{{tweet_time_1}}</p>
                             </div>
                             <div class="twitterBody">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.</p>
+                                <p>{{tweet_body_1}}</p>
                             </div>
                             <div class="twitterFooter">
                                 <ul>
-                                    <li><a href="#">Share <span></a></li>
-                                    <li><a href="#">View <span></a></li>
-                                    <li><a href="#">Retweet <span></a></li>
+                                    <li><a href="{{tweet_share_1}}">Share <span></a></li>
+                                    <li><a href="{{tweet_view_1}}">View <span></a></li>
+                                    <li><a href="{{tweet_retweet_1}}">Retweet <span></a></li>
                                 </ul>
                             </div>
                         </div>
-
                         <div class="twitterItem">
                             <div class="twitterHead">
                                 <img src="media/blockylogo2.png" alt="">
                                 <div>
-                                    <h1>Blocky.my</h1>
-                                    <a href="#">@blockymysupport</a>
+                                    <h1>{{tweet_profileName_2}}</h1>
+                                    <a href="{{tweet_accountLink_2}}">{{tweet_screenName_2}}</a>
                                 </div>
-                                <p>33m</p>
+                                <p>{{tweet_time_2}}</p>
                             </div>
                             <div class="twitterBody">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.</p>
+                                <p>{{tweet_body_2}}</p>
                             </div>
                             <div class="twitterFooter">
                                 <ul>
-                                    <li><a href="#">Share <span></a></li>
-                                    <li><a href="#">View <span></a></li>
-                                    <li><a href="#">Retweet <span></a></li>
+                                    <li><a href="{{tweet_share_2}}">Share <span></a></li>
+                                    <li><a href="{{tweet_view_2}}">View <span></a></li>
+                                    <li><a href="{{tweet_retweet_2}}">Retweet <span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -638,8 +722,8 @@
                         </p>
                     </form>
                     <div class="individualInputContainer">
-                        <textarea id="contact_message" rows="12" placeholder="Type your message here..."></textarea>
-                        <a id="contact_send">Send</a>
+                        <textarea style="background:#141920;" id="contact_message" rows="12" placeholder="Type your message here..."></textarea>
+                        <a class="btn-arrow" id="contact_send"><span>Send<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span></a>
                     </div>
                 </div>
             </div>
@@ -655,52 +739,14 @@
         </div>
     </div>
     <div class="footerContainer">
-        <div class="footerMid">
-            <div class="footerItem">
-                <h1>Company</h1>
-                <ul>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Random</a></li>
-                    <li><a href="#">Random Link</a></li>
-                </ul>
+        <div class="footer">
+            <div class="footerLeft">
+                <h4>blocky.my</h4>
+                <p>powered by the blocky team</p>
             </div>
-            <div class="footerItem">
-                <h1>Legal</h1>
+            <div class="footerRight">
                 <ul>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Random Sect</a></li>
-                </ul>
-            </div>
-            <div class="footerItem">
-                <h1>News</h1>
-                <ul>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Random</a></li>
-                    <li><a href="#">Sections</a></li>
-                    <li><a href="#">Information</a></li>
-                    <li><a href="#">Linker</a></li>
-                </ul>
-            </div>
-            <div class="footerItem">
-                <h1>Socials</h1>
-                <ul>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Random</a></li>
-                    <li><a href="#">Random Link</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footerBottom">
-            <div class="bottomItem">
-                <p>Copyright <a href="#">blocky.my</a> 2017. All rights reserved.</p>
-                <p>Powered by Blocky Network Sdn Bhd</p>
-            </div>
-            <div class="bottomItem">
-                <ul>
-                    <li><a href="#"><i class="ion ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion ion-social-instagram-outline"></i></a></li>
-                    <li><a href="#"><i class="ion ion-social-linkedin"></i></a></li>
+                    <a href="#contact">Contact</a>
                 </ul>
             </div>
         </div>
@@ -739,6 +785,9 @@
                 zoom: {
                     enabled: false
                 },
+                pan: {
+                    enabled: false
+                },
                 rangeSelector: {
                     selected: 4,
                     inputEnabled: false,
@@ -769,7 +818,7 @@
                     name: '',
                     data: data,
                     tooltip: {
-                        valueDecimals: 2
+                        enabled: false
                     }
                 }]
             });
@@ -778,15 +827,17 @@
 
     <script type="text/javascript">
         $('.newsContainer').slick({
-            dots: false,
+            dots: true,
             infinite: false,
             speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            prevArrow: false,
+            nextArrow: false,
             responsive: [{
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                         slidesToScroll: 1
                     }
                 },
@@ -798,7 +849,7 @@
                     }
                 },
                 {
-                    breakpoint: 650,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
@@ -812,6 +863,8 @@
             speed: 300,
             slidesToShow: 2,
             slidesToScroll: 2,
+            prevArrow: false,
+            nextArrow: false,
             responsive: [{
                     breakpoint: 1024,
                     settings: {
@@ -822,12 +875,12 @@
                 {
                     breakpoint: 900,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 1
                     }
                 },
                 {
-                    breakpoint: 650,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
@@ -838,15 +891,15 @@
     </script>
     <script>
         var rectNum = ['#rect1', '#rect2', '#rect3', '#rect4', '#rect5', '#rect6', '#rect7', '#rect8', '#rect9', '#rect10', '#rect11', '#rect12', '#rect13', '#rect14', '#rect15', '#rect16', '#rect17', '#rect1', '#rect2', '#rect3', '#rect4', '#rect5', '#rect6', '#rect7', '#rect8', '#rect9', '#rect10', '#rect11', '#rect12', '#rect13', '#rect14', '#rect15', '#rect16', '#rect17', '#rect18', '#rect19', '#rect20', '#rect21', '#rect22'];
-        var classList = ['color1', 'color2'];
+        var classList = ['color1', 'color2', 'color3'];
 
         function randomClassChanger() {
             var randomRect = rectNum[Math.floor(Math.random() * rectNum.length)];
             var randomColor = classList[Math.floor(Math.random() * classList.length)];
             $(randomRect).addClass(randomColor);
-            setTimeout(function() { $(randomRect).removeClass(); }, 1000);
+            setTimeout(function() { $(randomRect).removeClass(); }, 3000);
         }
-        setInterval(randomClassChanger, 1100);
+        setInterval(randomClassChanger, 2100);
 
         function pad(n, width, z) {
             z = z || '0';
@@ -916,6 +969,25 @@
 
         $(".dropbtn").click(function() {
             $(".dropdown-content").slideToggle("slow");
+        });
+
+        function getLatestTweet() {
+
+            $.get({
+                url: 'https://api.twitter.com/1.1/statuses/user_timeline.json',
+                method: 'GET',
+                headers: {
+                    'Authorization': 'OAuth oauth_consumer_key="jRxI9kQqP81w8FwB8hIIcQCU2", oauth_nonce="QWwKca6I4dIQvs44LQDv50rud2ck84ib", oauth_signature="ropsLN1OEykAX5xn8Ke%2B0E2BWY0%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1514600343", oauth_token="892796855897161728-IemokYBuVrsGSaeJ7lksO6evy1TOCoI", oauth_version="1.0"'
+                }
+            })
+
+        }
+
+        /* Navbar Toggle */
+        $(document).ready(function() {
+            $(".nav-toggle").click(function() {
+                $(".actualMobileNav").slideToggle(500);
+            });
         });
     </script>
 </body>

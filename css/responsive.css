@@ -5,7 +5,7 @@
         height: auto;
     }
     .newsRight {
-    height: 200px;
+        height: 200px;
     }
     .newsItem {
         padding: 0;
@@ -26,6 +26,27 @@
 }
 
 @media screen and (max-width: 1150px) {
+    .subscribeContainer {
+        text-align: center;
+    }
+    .homeTopInput {
+        margin-top: 40px;
+    }
+    .subscribeContainer i {
+        left: 50px;
+        top: 50px;
+    }
+    .btnHome {
+        padding: 12px 20px;
+        margin: auto;
+        top: 49px;
+        font-size: 12px;
+        font-weight: bold;
+        right: 40px;
+    }
+    #bgMedia {
+        transform: scale(2);
+    }
     .timeContainer:first-child {
         margin-right: 75px;
     }
@@ -75,6 +96,7 @@
     }
     .heroContainer {
         height: 100vh !important;
+        overflow: hidden;
     }
     .wrapper {
         position: relative;
@@ -87,6 +109,7 @@
     }
     .heroLeft p {
         text-align: center;
+        margin-top: 40px;
     }
     .heroLeft h4 {
         text-align: center;
@@ -120,19 +143,8 @@
 }
 
 .mobileNav {
-    display: none;
     position: relative;
-}
-
-.burgerMenu span {
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: white;
-}
-
-.burgerMenu span:not(:last-child) {
-    margin-bottom: 8px;
+    display: none;
 }
 
 .navRight {
@@ -140,7 +152,7 @@
     z-index: 100;
 }
 
-.actualMobileNav a {
+.actualMobileNav > a {
     color: white;
     font-weight: 500;
     font-size: 16px;
@@ -149,14 +161,22 @@
 
 .actualMobileNav {
     position: absolute;
-    top: 50px;
+    top: 69px;
     right: 0px;
     border-radius: 6px;
     background: #07090c;
-    display: flex;
+    display: none;
     flex-direction: column;
     z-index: 100;
-    min-width: 180px;
+    min-width: 10%;
+    width: 900%;
+    height: 468px;
+    overflow:hidden;
+}
+
+.actualMobileNav > .dropdownMain{
+    position: relative;
+    width: 100%;
 }
 
 @media screen and (min-width:900px) {
@@ -188,41 +208,62 @@
         justify-content: flex-end;
     }
     .footerBottom>.bottomItem:last-child>ul>li {
-        flex-basis:8%;
+        flex-basis: 8%;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .footer {
+        padding:10px 0;
+    }
+    .twitterFooter>ul>li:not(:first-of-type) {
+        margin-top:15px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .newsItem {
+        width: 90%!important;
+        margin: auto;
+    }
+    .twitterItem {
+        margin: 20px auto;
+    }
+    #bgMedia {
+        transform: scale(3);
+        height: 100%;
+    }
     .homeTopInput {
-        font-size:14px;
-            padding: 0 20px 0 70px;
+        font-size: 13px;
+        padding: 0 20px 0 65px;
     }
     .timeContainer h4 span {
-        padding:0!important;
-        font-weight:100;
-        font-size:0.9rem!important;
-        letter-spacing:0.6px
-        text-align:center!important;
+        padding: 0!important;
+        font-weight: 100;
+        font-size: 0.9rem!important;
+        letter-spacing: 0.6px text-align:center!important;
     }
     .heroRight {
-    margin-bottom: 40px;
-}
-    .subscribeContainer span {text-align:center}
+        margin-bottom: 50px;
+    }
+    .subscribeContainer span {
+        text-align: center
+    }
     .sectionHeader h4 {
         font-size: 34px;
         font-weight: bolder;
-        text-align: center;
+        text-align: left;
     }
     .sectionHeader h5 {
         font-size: 19px;
         line-height: 1.6;
-        text-align: center;
+        text-align: left;
         font-weight: 500;
     }
     .mobileNav {
-        display: flex;
+        display: block;
     }
-    .navRight ul {
+    .navRight>ul {
         display: none;
     }
     .featuresContainer {
@@ -250,11 +291,12 @@
         display: inline-block;
     }
     .btnHome {
-        padding: 12px 19px;
+        padding: 10px 15px;
         margin: auto;
-        top: 11px;
-        font-size: 13px;
+        top: 51px;
+        font-size: 12px;
         font-weight: bold;
+        right: 40px;
     }
     .timeContainer:nth-child(2) {
         margin-left: 5px;
@@ -268,7 +310,8 @@
     }
     .heroLeft h4 {
         text-align: center;
-        font-size: 37px;
+        font-size: 51px;
+        margin-top: 50px;
         font-weight: bolder;
         text-transform: uppercase;
     }
@@ -276,11 +319,17 @@
 
 
 @media screen and (max-width: 582px) {
+    .heroLeft p {
+        margin: 0;
+    }
+    .hero {
+        margin-top: 30px;
+    }
     .footerContainer {
-        padding:20px 30px;
+        padding: 20px 30px;
     }
     .footerBottom>.bottomItem:last-child>ul>li {
-        margin:0 10px;
+        margin: 0 10px;
     }
     .timeContainer {
         margin: 0px !important;
@@ -300,8 +349,24 @@
         margin-top: 25px;
         margin-left: 0px;
     }
+    .heroLeft h4 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .btnHome {
+        top: 31px;
+        right: 15px;
+    }
     .typeOfUser {
         flex-direction: column;
+    }
+    .homeTopInput {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .subscribeContainer i {
+        left: 20px;
+        top: 30px;
     }
     .typeOfUser p:last-child {
         margin-left: 0px;
