@@ -42,6 +42,10 @@ body {
     color: #ffffff;
 }
 
+.heroBackground>img {
+    width: 130px;
+}
+
 ::-webkit-input-placeholder {
     color: #b7b7b7;
 }
@@ -124,7 +128,7 @@ body {
 }
 
 .heroContainer {
-    background: #131a22;
+    background: url(../media/blockyBackground.png) center center no-repeat;
     display: flex;
     flex-direction: column;
     padding-left: 25px;
@@ -183,10 +187,10 @@ a:active {
 }
 
 .heroLeft h4 {
-    font-size: 46px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 62px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .heroLeft p {
@@ -401,8 +405,8 @@ a:active {
 .heroLeft h4 span {
     color: #ff9900;
     display: block;
-    font-weight: 900;
-    font-size: 58px;
+    /* font-weight: 900; */
+    /* font-size: 58px; */
     letter-spacing: 1px;
 }
 
@@ -704,6 +708,7 @@ a:active {
 .individualInputContainer textarea {
     width: 100%;
     border-radius: 5px;
+    color: white;
     font-size: 16px;
     padding: 25px;
     margin-top: 25px;
@@ -859,7 +864,7 @@ div#coverageMap img {
     margin-top: 20px;
     border-radius: 3px;
     padding-top: 0px;
-    right:0px;
+    right: 0px;
 }
 
 .dropdown {
@@ -892,7 +897,7 @@ div#coverageMap img {
     background: none;
     height: 100%;
     color: white;
-    background:#131a22;
+    background: #131a22;
     font-size: 0.85rem;
 }
 
@@ -947,8 +952,8 @@ div#coverageMap img {
     display: flex;
     height: 100%;
     padding: 50px 0;
-    max-width:1200px;
-    margin:0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -1055,6 +1060,7 @@ div#coverageMap img {
 #blockyDropdown .dropbtn {
     background: #131a22 !important;
 }
+
 .actualPoster {
     background-image: -webkit-gradient( linear, left top, left bottom, from(#2930389c), to(#2930389c)), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
     background-image: -webkit-linear-gradient( #2930389c, #2930389c), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
@@ -1076,8 +1082,8 @@ div#coverageMap img {
     background-color: rgb(22, 28, 35);
     padding: 34px 0px;
     margin: 50px -25px;
-    padding-left:25px;
-    padding-right:25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .commonSection>div:not(:nth-child(3)) {
