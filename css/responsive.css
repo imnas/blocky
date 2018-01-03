@@ -16,12 +16,14 @@
     }
     .newsPoster {
         position: relative;
-        bottom: 70px;
+        bottom: 64px;
+        right: 30px;
     }
     .newsRight>img {
         width: 100%;
-        bottom: 55px;
+        bottom: 59px;
         position: relative;
+        border-radius: 0;
     }
 }
 
@@ -92,15 +94,16 @@
         width: 80px;
     }
     .heroRight {
-        margin-bottom: 50px;
+    margin-bottom: 23px;
     }
     .heroContainer {
-        height: 100vh !important;
+        height: 100vh!important;
         overflow: hidden;
     }
     .wrapper {
-        position: relative;
-        right: 0px;
+        /* position: relative; */
+        /* right: 0px; */
+        height: auto;
     }
     .heroLeft {
         justify-content: center;
@@ -213,6 +216,32 @@
 }
 
 @media screen and (max-width: 768px) {
+    .spinnerItem>div {
+        bottom: 90px;
+    }
+    .spinnerWrap>h1 {
+        bottom: 172px;
+    }
+    .spinnerWrap {
+        width:100%;
+        height: 123px;
+        top: -25px;
+        display: flex;
+    }
+    .newsletterRight>div {
+        margin-top:20px;
+        max-width:100%;
+        width:100%;
+        position:relative;
+    }
+    .heroLeft>img {
+        display:none;
+    }
+    .newsletterContainer {
+        display:block;
+        text-align:center;
+        padding:30px 30px;
+    }
     .footer {
         padding:10px 0;
     }
@@ -248,7 +277,7 @@
         letter-spacing: 0.6px text-align:center!important;
     }
     .heroRight {
-        margin-bottom: 50px;
+    margin-bottom: 0;
     }
     .subscribeContainer span {
         text-align: center
@@ -314,15 +343,26 @@
     }
     .heroLeft h4 {
         text-align: center;
-        font-size: 51px;
+        font-size: 47px;
         margin-top: 50px;
-        font-weight: bolder;
+        font-weight: 900;
         text-transform: uppercase;
     }
 }
 
 
 @media screen and (max-width: 582px) {
+    .spinnerItem>div {
+        bottom:100px;
+        margin: 100px 10px;
+    }
+    .spinnerWrap>h1 {
+        display: inline-block;
+        text-align: right;
+        position: initial;
+        font-size: 1.2rem;
+        flex: 1;
+    }
     .heroLeft p {
         margin: 0;
     }
@@ -354,8 +394,9 @@
         margin-left: 0px;
     }
     .heroLeft h4 {
-        margin-top: 50px;
-        margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 69px;
+    line-height: 44px;
     }
     .btnHome {
         top: 31px;
