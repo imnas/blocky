@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    background: #0f1217;
+    background: #1a212a;
     font-family: "Open Sans", Arial;
     -webkit-font-smoothing: antialiased;
     color: #ffffff;
@@ -543,7 +543,7 @@ a:active {
 }
 
 .footerContainer {
-    background: #0b0f13;
+    background: #131a22;
     padding-left: 25px;
     padding-right: 25px;
     color: #fff;
@@ -756,7 +756,7 @@ a:active {
 }
 
 .socialContainerOuter {
-    background: #12181f;
+    background: #1c252f;
     padding-top: 22px;
     padding-bottom: 20px;
     display: flex;
@@ -811,9 +811,9 @@ div#coverageMap img {
 }
 
 .dropbtn {
-    background: #171c22;
+    background: #1c252f;
     display: inline-flex;
-    padding: 0 22px;
+    padding: 0 18px;
     height: 46px!important;
     border-radius: 5px;
     margin-right: 0!important;
@@ -859,7 +859,7 @@ div#coverageMap img {
     position: absolute;
     top: 45px;
     z-index: 300;
-    background: #171c22;
+    background: #1c252f;
     padding: 25px;
     margin-top: 20px;
     border-radius: 3px;
@@ -897,7 +897,7 @@ div#coverageMap img {
     background: none;
     height: 100%;
     color: white;
-    background: #0b0f13;
+    background: #131a22;
     font-size: 0.85rem;
 }
 
@@ -909,7 +909,7 @@ div#coverageMap img {
 }
 
 .blockyInput {
-    background: #0b0f13 !important;
+    background: #131a22 !important;
     height: 40px!important;
     align-items: center;
     padding: 0 15px;
@@ -929,7 +929,7 @@ div#coverageMap img {
 }
 
 .newsSlider {
-    background-color: #0b0f13;
+    background-color: #0e1319;
 }
 
 /* the slides */
@@ -1058,7 +1058,7 @@ div#coverageMap img {
 
 
 #blockyDropdown .dropbtn {
-    background: #10161c!important;
+    background: #131a22 !important;
 }
 
 .actualPoster {
@@ -1079,7 +1079,7 @@ div#coverageMap img {
 /*twitter*/
 
 #twitter {
-    background-color: #0b0f13;
+    background-color: rgb(22, 28, 35);
     padding: 34px 0px;
     margin: 50px -25px;
     padding-left: 25px;
@@ -1101,8 +1101,8 @@ div#coverageMap img {
 .twitterItem {
     flex-direction: row;
     padding: 26px 30px;
-    background-color: #131a22;
-    border-radius: 5px;
+    background-color: #101419;
+    border-radius: 10px;
     transition: 0.25s all ease-in-out;
 }
 
@@ -1168,7 +1168,7 @@ div#coverageMap img {
 }
 
 .twitterFooter>ul>li>a {
-    background-color: #0b0f13;
+    background-color: #171c24;
     padding: 8px 20px;
     font-weight: 900;
     font-size: 15px;
