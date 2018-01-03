@@ -21,6 +21,9 @@ a {
     text-decoration: none;
     color:#fff;
 }
+a.mailto-founder {
+    color:#000;
+}
 /* input {
     width: 100%;
 } */
