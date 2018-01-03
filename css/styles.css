@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    background: #1a212a;
+    background: #0e1115;
     font-family: "Open Sans", Arial;
     -webkit-font-smoothing: antialiased;
     color: #ffffff;
@@ -42,8 +42,32 @@ body {
     color: #ffffff;
 }
 
+.heroBackground {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero_image_4 {
+    width: 30px;
+}
+
 .heroBackground>img {
-    width: 130px;
+    width: 95px;
+    position: absolute;
+    display: none;
+}
+
+.heroLeft>img {
+    width: 140px;
+    z-index: -1;
+    position: absolute;
+    top: 22px;
+    opacity: 0.6;
+    left: -36px;
 }
 
 ::-webkit-input-placeholder {
@@ -207,10 +231,11 @@ a:active {
 .homeTopInput {
     height: 59px;
     border-radius: 5px;
-    background-color: #0d1115;
+    background-color: #12171d;
     border: none;
     outline: 0;
     font-size: 15px;
+    box-shadow: 0 0 20px #0b0f13;
     color: white;
     line-height: 1.75;
     letter-spacing: -0.3px;
@@ -405,8 +430,7 @@ a:active {
 .heroLeft h4 span {
     color: #ff9900;
     display: block;
-    /* font-weight: 900; */
-    /* font-size: 58px; */
+    font-weight: 900;
     letter-spacing: 1px;
 }
 
@@ -417,6 +441,7 @@ a:active {
     margin: 0 auto;
     display: flex;
     width: 100%;
+    margin-top: 33px;
 }
 
 .learnMoreSection a i {
@@ -543,7 +568,7 @@ a:active {
 }
 
 .footerContainer {
-    background: #131a22;
+    background: #0b0f13;
     padding-left: 25px;
     padding-right: 25px;
     color: #fff;
@@ -673,7 +698,7 @@ a:active {
     width: 100%;
     padding: 25px;
     border-radius: 3px;
-    border: 1px solid #10161d;
+    border: 1px solid #141920;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -688,7 +713,7 @@ a:active {
     font-size: 16px;
     padding: 25px;
     color: white;
-    background: #0e11157a;
+    background: #141920;
 }
 
 .dualInputContainer input:last-child {
@@ -756,7 +781,7 @@ a:active {
 }
 
 .socialContainerOuter {
-    background: #1c252f;
+    background: #12181f;
     padding-top: 22px;
     padding-bottom: 20px;
     display: flex;
@@ -811,9 +836,9 @@ div#coverageMap img {
 }
 
 .dropbtn {
-    background: #1c252f;
+    background: #171c22;
     display: inline-flex;
-    padding: 0 18px;
+    padding: 0 22px;
     height: 46px!important;
     border-radius: 5px;
     margin-right: 0!important;
@@ -859,7 +884,7 @@ div#coverageMap img {
     position: absolute;
     top: 45px;
     z-index: 300;
-    background: #1c252f;
+    background: #171c22;
     padding: 25px;
     margin-top: 20px;
     border-radius: 3px;
@@ -897,7 +922,7 @@ div#coverageMap img {
     background: none;
     height: 100%;
     color: white;
-    background: #131a22;
+    background: #0b0f13;
     font-size: 0.85rem;
 }
 
@@ -909,7 +934,7 @@ div#coverageMap img {
 }
 
 .blockyInput {
-    background: #131a22 !important;
+    background: #0b0f13 !important;
     height: 40px!important;
     align-items: center;
     padding: 0 15px;
@@ -929,7 +954,7 @@ div#coverageMap img {
 }
 
 .newsSlider {
-    background-color: #0e1319;
+    background-color: #0b0f13;
 }
 
 /* the slides */
@@ -939,7 +964,7 @@ div#coverageMap img {
 }
 
 .slick-dots {
-    bottom: 12px;
+    bottom: 14px!important;
 }
 
 /* the parent */
@@ -948,9 +973,12 @@ div#coverageMap img {
     margin: 0 -25px;
 }
 
+
+
 .newsContainer {
     display: flex;
     height: 100%;
+    margin-bottom: 0!important;
     padding: 50px 0;
     max-width: 1200px;
     margin: 0 auto;
@@ -1058,7 +1086,7 @@ div#coverageMap img {
 
 
 #blockyDropdown .dropbtn {
-    background: #131a22 !important;
+    background: #10161c!important;
 }
 
 .actualPoster {
@@ -1079,7 +1107,7 @@ div#coverageMap img {
 /*twitter*/
 
 #twitter {
-    background-color: rgb(22, 28, 35);
+    background-color: #0b0f13;
     padding: 34px 0px;
     margin: 50px -25px;
     padding-left: 25px;
@@ -1101,8 +1129,8 @@ div#coverageMap img {
 .twitterItem {
     flex-direction: row;
     padding: 26px 30px;
-    background-color: #101419;
-    border-radius: 10px;
+    background-color: #141920;
+    border-radius: 5px;
     transition: 0.25s all ease-in-out;
 }
 
@@ -1168,7 +1196,7 @@ div#coverageMap img {
 }
 
 .twitterFooter>ul>li>a {
-    background-color: #171c24;
+    background-color: #0e1317;
     padding: 8px 20px;
     font-weight: 900;
     font-size: 15px;
@@ -1271,6 +1299,10 @@ div#coverageMap img {
     transform: translate3d(-1rem, 0, 0);
 }
 
+#bodyContent {
+    background: #0b0f13;
+}
+
 .btn-arrow svg {
     position: absolute;
     width: 1.1em;
@@ -1292,4 +1324,190 @@ div#coverageMap img {
 .btn-arrow:hover svg {
     opacity: 1;
     right: -2rem;
+}
+
+
+/* Newsletter Section */
+
+.newsletterMain {
+    background: #0a0c0f;
+}
+
+.newsletterRight,
+.newsletterLeft {
+    flex: 1;
+    justify-content: right;
+}
+
+.newsletterContainer {
+    display: flex;
+    padding: 27px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.newsletterRight>div {
+    float: right;
+    justify-content: center;
+    max-width: 70%;
+}
+
+.newsletterLeft>h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.newsletterLeft>p {
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.newsletterRight>div>button {
+    right: 13px;
+    height: 38px;
+    top: 11px;
+    padding: 0 34px;
+    font-weight: bold;
+}
+
+.newsletterRight>div>input {
+    background: #0d1115;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.newsletterRight>div>i {
+    font-size: 2.3rem;
+    left: 25px;
+    top: 13px;
+}
+
+/* Spinner Animation */
+
+.spinnerWrap {
+    background: rgb(248, 166, 1);
+    background: -moz-linear-gradient(to right, rgba(255, 153, 0, 0.41) 0%, rgb(255, 171, 0) 100%);
+    background: -webkit-linear-gradient(to right, rgba(255, 153, 0, 0.41) 0%, rgb(255, 171, 0) 100%);
+    background: -webkit-linear-gradient(to right, rgba(255, 153, 0, 0.41) 0%, rgb(255, 171, 0) 100%);
+    background: -o-linear-gradient(to right, rgba(255, 153, 0, 0.41) 0%, rgb(255, 171, 0) 100%);
+    background: -ms-linear-gradient(to right, rgba(255, 153, 0, 0.41) 0%, rgb(255, 171, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 153, 0, 0.41) 0%, rgb(255, 171, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f7b733', GradientType=1);
+    padding: 20px;
+    height: 283px;
+    width: 64%;
+    position: relative;
+    top: 5px;
+    float: right;
+    border-radius: 7px;
+    /* box-shadow: 0 0 30px #00000033; */
+}
+
+.spinnerWrap>h1 {
+    font-weight: 800;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    bottom: 130px;
+}
+
+.spinnerWrap>h1>span {
+    display: block;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+.spinnerItem>div {
+    float: none;
+    position: relative;
+    bottom: 70px;
+}
+
+.sk-cube-grid {
+    width: 80px;
+    height: 80px;
+    margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #fff;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
 }
