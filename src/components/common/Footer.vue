@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="footerWrap">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="footerItem" id="footerSec1">
                             <h1>Company</h1>
                             <ul>
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <div class="footerItem" id="footerSec3">
                             <h1>Company</h1>
                             <ul>

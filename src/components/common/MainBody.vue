@@ -1,8 +1,8 @@
 <template>
     <div class="homeWrap">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8">
+        <div class="xx">
+            <div class="flexRowCustom">
+                <div class="bodyLeft">
                     <div class="homeLeft">
                         <div class="anonMain">
                             <div class="anonLeft">
@@ -20,7 +20,7 @@
                             <h1>Current News</h1>
                             <div class="newsMain">
                                 <div class="newsItem">
-                                    <div class="row">
+                                    <div class="customRow">
                                         <div class="col-md-4">
                                             <div class="newsImage">
                                                 <img src="../../assets/img/news3.jpg">
@@ -54,7 +54,7 @@
                                 <hr>
 
                                 <div class="newsItem">
-                                    <div class="row">
+                                    <div class="customRow">
                                         <div class="col-md-4">
                                             <div class="newsImage">
                                                 <img src="../../assets/img/news3.jpg">
@@ -88,7 +88,7 @@
                                 <hr>
 
                                 <div class="newsItem">
-                                    <div class="row">
+                                    <div class="customRow">
                                         <div class="col-md-4">
                                             <div class="newsImage">
                                                 <img src="../../assets/img/news3.jpg">
@@ -124,7 +124,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="bodySideBarRight">
                     <div class="homeRight">
                         <div class="sidebarWrap">
                             <div class="sidebar1">
@@ -169,8 +169,8 @@
                                 <h1>Social Media</h1>
                                 <div class="socialWrap">
                                     <div class="socialItem">
-                                        <div class="row">
-                                            <div class="col-md-12">
+                                        <div class="crow">
+                                            <div class="socialContainer">
                                                 <div class="socialLeft">
                                                     <div class="socialTop">
                                                         <img src="../../assets/img/twitterS.png" alt="Twitter">
@@ -186,12 +186,12 @@
                                     </div>
 
                                     <div class="socialItem">
-                                        <div class="row">
-                                            <div class="col-md-12">
+                                        <div class="crow">
+                                            <div class="socialContainer">
                                                 <div class="socialLeft">
                                                     <div class="socialTop">
                                                         <img src="../../assets/img/instagramS.png" alt="Instagram">
-                                                        <a href="#">Blocky_my</a>
+                                                        <a href="#">Blocky.my</a>
                                                     </div>
                                                     <div class="socialBottom">
                                                         <h5>Followers:</h5>
@@ -203,8 +203,8 @@
                                     </div>
 
                                     <div class="socialItem">
-                                        <div class="row">
-                                            <div class="col-md-12">
+                                        <div class="crow">
+                                            <div class="socialContainer">
                                                 <div class="socialLeft">
                                                     <div class="socialTop">
                                                         <img src="../../assets/img/facebookS.png" alt="Facebook">

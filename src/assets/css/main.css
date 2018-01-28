@@ -173,7 +173,7 @@ ul.navItms {
 }
 
 .tickerLeft>img {
-    width: 57px;
+    width: 75px;
 }
 
 .tickerRight>p {
@@ -255,11 +255,13 @@ ul.navItms {
     padding: 21px 23px;
     display: inline-block;
     border-radius: 100px;
-    background: linear-gradient(0deg, #ffc559 0%, #ffa41a 100%);
+    background: linear-gradient(0deg, #ff9900 0%, #ff9900 100%);
 }
 
 .liveRight>span>img {
     width: 20px;
+}.bodyLeft {
+    width: 100%;
 }
 
 
@@ -271,10 +273,12 @@ ul.navItms {
 }
 
 .homeRight {
-    background-color: #ffffff;
+    background-color: #151b20;
     width: 100%;
-    min-height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .homeWrap {
@@ -296,7 +300,7 @@ ul.navItms {
     text-align: right;
 }
 .anonMain {
-    background: linear-gradient(90deg, #FFAB3F 0%, #FFB24B 100%);
+    background: linear-gradient(90deg, #ff9900 0%, #ff9900 100%);
     padding: 25px 50px;
     display: flex;
     flex-direction: row;
@@ -316,39 +320,35 @@ ul.navItms {
     letter-spacing: -0.1px;
 }
 
-.anonRight>h1,
-.anonLeft>h1 {
+.anonRight>h1, .anonLeft>h1 {
     margin-top: 8px;
     margin-bottom: 12px;
     font-size: 2.8rem;
     font-weight: 900;
     letter-spacing: -0.5px;
+    color: #6B638A;
 }
 
 
 /*News Section*/
 
 .newsWrap {
-    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     height: 100%;
+    padding: 50px;
 }
-
-.newsMain {
-    margin: 0 30px;
-    margin-top: 60px;
-    height: 100%;
+.customRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
-
 .newsWrap>h1 {
     font-weight: 700;
-    margin-bottom: 0;
+    margin-bottom: 25px;
+    margin-top: 0px;
     color: #1F2C39;
-    font-size: 3.1rem;
-    margin: 0 15px;
-    letter-spacing: -2px;
-    margin-top: 40px;
+    font-size: 26px;
 }
 
 /*Subscribe Newsletter*/
@@ -360,7 +360,6 @@ ul.navItms {
     font-weight: 500;
     color: #FE980F;
     line-height: 42px;
-    width: 47%;
     letter-spacing: -1.2px;
 }
 
@@ -370,7 +369,6 @@ ul.navItms {
 
 .sidebar1 {
     background-color: #162029;
-    height: 220px;
 }
 
 .sidebar1 input {
@@ -457,18 +455,23 @@ form.form-wrapper.cf {
 }
 
 .voteTop>a {
-    float: right;
-    top: 30px;
     border-radius: 3px;
     font-size: 1.6rem;
-    position: relative;
     color: #2E2C2C;
     text-align: left;
     background: white;
     padding: 10px 20px;
     font-weight: 800;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-
+.bodySideBarRight {
+    max-width: 525px;
+    width: 100%;
+}
 .voteTop {
     width: 100%;
 }
@@ -543,7 +546,13 @@ form.form-wrapper.cf {
     line-height: 29px;
     font-size: 1.6rem;
 }
-
+.socialContainer {
+    width: 100%;
+}
+.socialTop {
+    text-align: left;
+    width: 100%;
+}
 .datePosted>h1 {
     color: rgba(33, 48, 61, 0.75);
     font-weight: 800;
@@ -552,7 +561,13 @@ form.form-wrapper.cf {
     letter-spacing: -0.4px;
     text-transform: uppercase;
 }
-
+.crow {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+}
 .datePosted {
     text-align: right;
     position: relative;
@@ -585,7 +600,12 @@ form.form-wrapper.cf {
 .newsContainer {
     margin-left: 35px;
 }
-
+.socialLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 /* Social Media */
 .socialRight {
     text-align: right;
@@ -599,8 +619,21 @@ form.form-wrapper.cf {
     font-weight: bold;
 }
 .socialBottom {
-    margin-top: 25px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.socialBottom h5 {
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-right:5px;
+}
+.socialBottom {
+    position: relative;
+    top: 4px;
 }
 .sidebar3>h1 {
     margin-top: 10px;
@@ -611,12 +644,17 @@ form.form-wrapper.cf {
 
 .socialItem {
     margin: 40px 0;
-    padding: 20px 32px;
     border-radius: 3px;
     background-color: #21313F;
-    min-height:150px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.socialLeft {
+    position: relative;
+    top: -4px;
+}
 .socialWrap>.socialItem:first-child {
     background-color: #289DFF;
 }
@@ -630,18 +668,14 @@ form.form-wrapper.cf {
     font-weight: 900;
     color: white;
     position: relative;
-    top: 4px;
+    top: 3px;
     left: 15px;
-}
-.socialTop {
-    text-align: center;
-    padding-right: 45px;
 }
 
 /* Footer */
 
 .footer {
-    background-color: #FF9900;
+    background-color: #ff9900;
 }
 
 .footerWrap {
@@ -659,6 +693,7 @@ form.form-wrapper.cf {
 #footerSec3>ul>li:first-child>ul>li {
     display: inline-block;
     margin-right: 35px;
+    margin-top: 15px;
 }
 
 #footerSec3>ul>li:first-child>ul>li:last-child img {
@@ -807,9 +842,15 @@ ul.movileNavList li {
     padding-left: 25px;
     border-bottom: 1px solid #21313f;
 }
-
-
-
+.flexRowCustom {
+    display: flex;
+    flex-direction: row;
+}
+.sidebarWrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 
 

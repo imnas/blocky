@@ -9,6 +9,11 @@
     .ticketMain {
         flex-direction: column;
     }
+    .tickerItem {
+        min-height: 100px;
+    }
+    
+    
     .flexItemCoinPrice:nth-child(2) {
         margin-left: 0px;
         margin-right: 0px;
@@ -20,6 +25,18 @@
     }
     .anonRight>h1, .anonLeft>h1 {
         font-size: 20px;
+    }
+    .flexRowCustom {
+        flex-direction: column;
+    }
+    .bodySideBarRight {
+        max-width: unset;
+    }
+    .datePosted {
+        transform: none;
+    }
+    .newsImage {
+        margin-right: 50px;
     }
 }
 
@@ -49,6 +66,15 @@
     display:unset;
 }
 }
+
+@media screen and (max-width: 860px) {
+    .customRow {
+        flex-direction: column;
+    }
+    .newsImage {
+        margin-right:0px;
+    }
+    }
 
 @media screen and (max-width: 768px) {
     .liveLeft>h1 {
@@ -88,10 +114,10 @@
     .voteTop>div>p {
         font-size: 16px;
     }
-    .voteTop>a {
+    /* .voteTop>a {
         font-size: 13px;
         padding: 5px 15px;
-    }
+    } */
     .voteItem>div>p {
         font-size: 11px;
     }
@@ -104,8 +130,8 @@
 }
 
 @media screen and (max-width: 582px) {
-    .voteTop>a {
+    /* .voteTop>a {
         top: 5px;
-    }
+    } */
 }
 
