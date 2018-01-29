@@ -149,7 +149,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <a href="#">Cast Vote <img src="../../assets/img/arrowRight.png"></a>
+                                    <!-- <a href="#">Cast Vote <img src="../../assets/img/arrowRight.png"></a> -->
                                 </div>
                                 <div class="voteBottom">
                                     <div class="voteItem">
@@ -186,7 +186,7 @@
                                                     </div>
                                                     <div class="socialBottom">
                                                         <h5>Followers:</h5>
-                                                        <p>{{twitterFollowers}}</p>
+                                                        <p v-html="twitterFollowers"></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -203,7 +203,7 @@
                                                     </div>
                                                     <div class="socialBottom">
                                                         <h5>Followers:</h5>
-                                                        <p>{{instagramFollowers}}</p>
+                                                        <p v-html="instagramFollowers"></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -220,7 +220,7 @@
                                                     </div>
                                                     <div class="socialBottom">
                                                         <h5>Followers:</h5>
-                                                        <p>{{facebookFollowers}}</p>
+                                                        <p v-html="facebookFollowers"></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -285,9 +285,9 @@ export default {
   name: 'MainBody',
   data () {
     return {
-        instagramFollowers : 0,
-        facebookFollowers : 0,
-        twitterFollowers : 0,
+        instagramFollowers : '<div class="loader customSizeLoad"></div>',
+        facebookFollowers : '<div class="loader customSizeLoad"></div>',
+        twitterFollowers : '<div class="loader customSizeLoad"></div>',
         barLoaded: false
     }
   }
