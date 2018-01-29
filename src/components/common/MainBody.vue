@@ -16,6 +16,13 @@
                                 <p>Kuala Lumpur, Malaysia</p>
                             </div>
                         </div>
+                            <div class="sidebar1">
+                                <h1>Subscribe to our Newsletter.</h1>
+                                <form class="form-wrapper cf">
+                                    <input type="text" placeholder="Search here..." required>
+                                    <button type="submit"><img src="../../assets/img/newsletterSend.png" alt="Submit Email"></button>
+                                </form>
+                            </div>
                         <div class="newsWrap">
                             <h1>Current News</h1>
                             <div class="newsMain">
@@ -29,22 +36,21 @@
                                         <div class="col-md-8">
                                             <div class="newsContainer">
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-9">
                                                         <div class="newsLeft">
-                                                            <span>John Church</span>
                                                             <h1>Stair Lifts Feel The Freedom Of Your Home.</h1>
+                                                            <span>John Church</span>
                                                             <p>Goldman Sachs analysts have claimed bitcoin is in a bubble bigger than the dot-com era and the famous Dutch tulip mania</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-3">
                                                         <div class="newsRight">
                                                             <p class="categoryType"><span>|</span> Tech</p>
-                                                            <div class="datePosted">
-                                                                <h1>Posted</h1>
-                                                                <p>Jan. 23rd, 2018</p>
-                                                            </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="datePosted">
+                                                    <p>Jan. 23rd, 2018</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,22 +69,21 @@
                                         <div class="col-md-8">
                                             <div class="newsContainer">
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-9">
                                                         <div class="newsLeft">
-                                                            <span>John Church</span>
                                                             <h1>Stair Lifts Feel The Freedom Of Your Home.</h1>
+                                                            <span>John Church</span>
                                                             <p>Goldman Sachs analysts have claimed bitcoin is in a bubble bigger than the dot-com era and the famous Dutch tulip mania</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-3">
                                                         <div class="newsRight">
                                                             <p class="categoryType"><span>|</span> Tech</p>
-                                                            <div class="datePosted">
-                                                                <h1>Posted</h1>
-                                                                <p>Jan. 23rd, 2018</p>
-                                                            </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="datePosted">
+                                                    <p>Jan. 23rd, 2018</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -97,22 +102,21 @@
                                         <div class="col-md-8">
                                             <div class="newsContainer">
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-9">
                                                         <div class="newsLeft">
-                                                            <span>John Church</span>
                                                             <h1>Stair Lifts Feel The Freedom Of Your Home.</h1>
+                                                            <span>John Church</span>
                                                             <p>Goldman Sachs analysts have claimed bitcoin is in a bubble bigger than the dot-com era and the famous Dutch tulip mania</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-3">
                                                         <div class="newsRight">
                                                             <p class="categoryType"><span>|</span> Tech</p>
-                                                            <div class="datePosted">
-                                                                <h1>Posted</h1>
-                                                                <p>Jan. 23rd, 2018</p>
-                                                            </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="datePosted">
+                                                    <p>Jan. 23rd, 2018</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,14 +131,6 @@
                 <div class="bodySideBarRight">
                     <div class="homeRight">
                         <div class="sidebarWrap">
-                            <div class="sidebar1">
-                                <h1>Subscribe to our Newsletter.</h1>
-                                <form class="form-wrapper cf">
-                                    <input type="text" placeholder="Search here..." required>
-                                    <button type="submit"><img src="../../assets/img/newsletterSend.png" alt="Submit Email"></button>
-                                </form>
-                            </div>
-
                             <div class="sidebar2">
                                 <div class="voteTop">
                                     <div>

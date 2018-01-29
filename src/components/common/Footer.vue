@@ -5,7 +5,6 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="footerItem" id="footerSec1">
-                            <h1>Company</h1>
                             <ul>
                                 <li><img src="../../assets/img/logoF.png" alt="Blocky.my"></li>
                                 <li>
@@ -13,7 +12,7 @@
                                     <p>Kuala Lumpur, Malaysia</p>
                                 </li>
                                 <li>
-                                    <h1>Address</h1>
+                                    <h1>Copyright</h1>
                                     <p>2017 All Rights Reserved - <b>blocky.my</b></p>
                                 </li>
                             </ul>
