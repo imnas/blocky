@@ -135,7 +135,19 @@
                                 <div class="voteTop">
                                     <div>
                                         <h1>Voting Poll</h1>
-                                        <p>Why is bitcoin dropping?</p>
+                                        <p>Is Bitcoin a dead meme?</p>
+                                    </div>
+                                    <div class="radioContainer">
+                                        <div class="control-group">
+                                            <label class="control control--radio">Yes
+                                                <input type="radio" name="radio" checked="checked"/>
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--radio">No
+                                                <input type="radio" name="radio"/>
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                        </div>
                                     </div>
                                     <a href="#">Cast Vote <img src="../../assets/img/arrowRight.png"></a>
                                 </div>
@@ -146,7 +158,7 @@
                                             <p>50%, 2,405</p>
                                         </div>
                                         <div class="voteBar">
-                                            <div></div>
+                                            <div v-bind:class="{ barFiller: barLoaded }"></div>
                                         </div>
                                     </div>
                                     <div class="voteItem">
@@ -155,7 +167,7 @@
                                             <p>50%, 2,405</p>
                                         </div>
                                         <div class="voteBar">
-                                            <div></div>
+                                            <div v-bind:class="{ barFiller: barLoaded }"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -237,10 +249,6 @@ export default {
             }
             this.instagramFollowers = count;
         })
-        // console.log(this.instagramFollowers);
-        // setTimeout(() => {
-        // console.log(this.instagramFollowers);
-        // }, 2000);
     },
     getTwitter() {
         likes.twitter('blocky_my', (err, count) => {
@@ -250,23 +258,20 @@ export default {
             }
             this.twitterFollowers = count;
         })
-        // console.log(this.twitterFollowers);
-        // setTimeout(() => {
-        // console.log(this.twitterFollowers);
-        // }, 2000);
     },
     getFacebook() {
-        likes.facebook('blocky.my', (err, count) => {
+        likes.facebook('Blockymy-397902483995283', (err, count) => {
             if (err) {
                 console.error(err)
                 process.exit(1)
             }
             this.facebookFollowers = count;
         })
-        // console.log(this.facebookFollowers);
-        // setTimeout(() => {
-        // console.log(this.facebookFollowers);
-        // }, 2000);
+    },
+    barFillOnLoad() {
+            setTimeout(() => {
+            this.barLoaded = true;
+            }, 500);
     },
   },
  beforeMount(){
@@ -274,15 +279,20 @@ export default {
     this.getTwitter();
     this.getFacebook();
  },
+  mounted(){
+    this.barFillOnLoad();
+ },
   name: 'MainBody',
   data () {
     return {
         instagramFollowers : 0,
         facebookFollowers : 0,
-        twitterFollowers : 0
+        twitterFollowers : 0,
+        barLoaded: false
     }
   }
 }
+
 </script>
 
 <style>

@@ -212,12 +212,12 @@ ul.navItms {
 }
 .newsItem:hover {
     background: #162029;
-    padding: 25px;
     transition: all .1s ease-in-out;
 }
 .newsItem {
     transition: all .1s ease-in-out;
-    border-radius:4px;
+    border-radius:0px;
+    padding:50px;
 }
 .tickerRight>div {
     margin: 15px 0;
@@ -343,7 +343,7 @@ ul.navItms {
 }
 
 .anonRight>h1, .anonLeft>h1 {
-    margin-top: 8px;
+    margin-top: -2px;
     margin-bottom: 12px;
     font-size: 2.8rem;
     font-weight: 900;
@@ -358,7 +358,7 @@ ul.navItms {
     width: 100%;
     margin: 0 auto;
     height: 100%;
-    padding: 50px;
+    /* padding: 50px; */
 }
 .customRow {
     display: flex;
@@ -367,10 +367,14 @@ ul.navItms {
 }
 .newsWrap>h1 {
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     margin-top: 0px;
     color: #1F2C39;
     font-size: 26px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    border-bottom: 1px solid #eee;
 }
 
 /*Subscribe Newsletter*/
@@ -530,9 +534,13 @@ form.form-wrapper.cf {
 .voteBar>div {
     height: 40px;
     background-color: #2197FF;
-    width: 140px;
+    width: 0%;
+    transition: all .25s ease-in-out;
 }
-
+.barFiller {
+    width:93% !important;
+    transition: all .25s ease-in-out;
+}
 /*News Section */
 
 .newsImage>img {
@@ -620,7 +628,7 @@ form.form-wrapper.cf {
 }
 
 .newsMain>hr {
-    margin: 60px 0;
+    margin: 0px 0;
 }
 
 .newsContainer {
@@ -763,7 +771,7 @@ form.form-wrapper.cf {
     font-weight: 600;
     color: #fff;
     position: absolute;
-    top: 12px;
+    top: 21px;
     left: 44px;
 }
 .footerItem>ul h1 {
@@ -896,6 +904,116 @@ ul.movileNavList li {
     display: flex;
     flex-direction: column;
 }
+
+.control.control--radio:last-child {
+    margin-bottom: 0px;
+}
+.control-group {
+    display: flex;
+    text-align: left;
+    vertical-align: top;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 150px;
+}
+.control {
+    font-size: 16px;
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background: #e6e6e6;
+}
+
+.control--radio .control__indicator {
+	border-radius: 50%;
+}
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background: #ccc;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+	background: #ff9900 ;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+	background: #e08700 ;
+}
+
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+	pointer-events: none;
+	opacity: .6;
+	background: #e6e6e6;
+}
+
+/* Check mark */
+.control__indicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+	display: block;
+}
+
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+	top: 4px;
+	left: 8px;
+	width: 3px;
+	height: 8px;
+	transform: rotate(45deg);
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+	border-color: #7b7b7b;
+}
+
+/* Radio button inner circle */
+.control--radio .control__indicator:after {
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+/* Disabled circle colour */
+.control--radio input:disabled ~ .control__indicator:after {
+	background: #7b7b7b;
+}
+.radioContainer {
+    display: unset;
+    width: 100%;
+}
+
 
 
 

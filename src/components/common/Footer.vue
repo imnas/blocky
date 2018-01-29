@@ -5,6 +5,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="footerItem" id="footerSec1">
+                            <h1>Company</h1>
                             <ul>
                                 <li><img src="../../assets/img/logoF.png" alt="Blocky.my"></li>
                                 <li>
@@ -42,7 +43,7 @@
                     
                     <div class="col-md-4">
                         <div class="footerItem" id="footerSec3">
-                            <h1>Company</h1>
+                            <h1>Other</h1>
                             <ul>
                                 <li>
                                     <h1>Our Partners</h1>
