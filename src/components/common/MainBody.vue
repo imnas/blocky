@@ -174,7 +174,7 @@
                                                     </div>
                                                     <div class="socialBottom">
                                                         <h5>Followers:</h5>
-                                                        <p>{{instagramFollowers}}</p>
+                                                        <p>{{twitterFollowers}}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -204,11 +204,11 @@
                                                 <div class="socialLeft">
                                                     <div class="socialTop">
                                                         <img src="../../assets/img/facebookS.png" alt="Facebook">
-                                                        <a href="#">Blocky_my</a>
+                                                        <a href="#">Blocky.my</a>
                                                     </div>
                                                     <div class="socialBottom">
                                                         <h5>Followers:</h5>
-                                                        <p>{{instagramFollowers}}</p>
+                                                        <p>{{facebookFollowers}}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -237,19 +237,49 @@ export default {
             }
             this.instagramFollowers = count;
         })
-        console.log(this.instagramFollowers);
-        setTimeout(() => {
-        console.log(this.instagramFollowers);
-        }, 2000);
+        // console.log(this.instagramFollowers);
+        // setTimeout(() => {
+        // console.log(this.instagramFollowers);
+        // }, 2000);
+    },
+    getTwitter() {
+        likes.twitter('blocky_my', (err, count) => {
+            if (err) {
+                console.error(err)
+                process.exit(1)
+            }
+            this.twitterFollowers = count;
+        })
+        // console.log(this.twitterFollowers);
+        // setTimeout(() => {
+        // console.log(this.twitterFollowers);
+        // }, 2000);
+    },
+    getFacebook() {
+        likes.facebook('blocky.my', (err, count) => {
+            if (err) {
+                console.error(err)
+                process.exit(1)
+            }
+            this.facebookFollowers = count;
+        })
+        // console.log(this.facebookFollowers);
+        // setTimeout(() => {
+        // console.log(this.facebookFollowers);
+        // }, 2000);
     },
   },
  beforeMount(){
     this.getInstagram();
+    this.getTwitter();
+    this.getFacebook();
  },
   name: 'MainBody',
   data () {
     return {
         instagramFollowers : 0,
+        facebookFollowers : 0,
+        twitterFollowers : 0
     }
   }
 }

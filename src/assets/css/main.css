@@ -739,7 +739,13 @@ form.form-wrapper.cf {
 .footerItem {
     margin: 0 auto;
 }
-
+.navLeft {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
 .footerItem>h1 {
     margin-bottom: 0;
     font-weight: 900;
@@ -748,7 +754,18 @@ form.form-wrapper.cf {
     color: #151B20;
     letter-spacing: -0.4px;
 }
-
+.navLogo {
+    position:relative;
+    width:100%;
+}
+.navLogo h1 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 44px;
+}
 .footerItem>ul h1 {
     font-weight: 800;
     letter-spacing: -0.7px;

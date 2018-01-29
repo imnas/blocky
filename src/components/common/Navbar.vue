@@ -2,7 +2,7 @@
     <div class="customNavContainer">
     <nav class="customNav">
         <div class="navLeft">
-            <a class="navLogo" href="/"><img src="../../assets/img/logo.svg"/></a>
+            <a class="navLogo" href="/"><img src="../../assets/img/logo.svg"/><h1>Empowering the community</h1></a>
         </div>
         <div class="navRight">
         <ul class="navItms">
