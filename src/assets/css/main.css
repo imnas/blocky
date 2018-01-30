@@ -409,6 +409,7 @@ ul.navItms {
     float: left;
     font-size: 17px;
     padding-left: 20px;
+    position:Relative;
 }
 
 .sidebar1 button {
@@ -442,6 +443,7 @@ form.form-wrapper.cf {
     flex-direction: row;
     align-items: center;
     position:relative;
+    height:50px;
 }
 /* .form-wrapper {
     width: 550px;
