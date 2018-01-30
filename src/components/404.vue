@@ -85,7 +85,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'page404',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
