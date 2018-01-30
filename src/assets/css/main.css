@@ -296,7 +296,7 @@ ul.navItms {
 }
 
 .homeRight {
-    background-color: #151b20;
+    background-color: #162029;
     width: 100%;
     position: relative;
     display: flex;
@@ -650,7 +650,7 @@ form.form-wrapper.cf {
     text-align: right;
 }
 .sidebar3 {
-    background-color: #151B20;
+    background-color: #162029;
 }
 .socialBottom p {
     margin-bottom: 0px;
@@ -695,9 +695,44 @@ form.form-wrapper.cf {
     top: -4px;
 }
 .socialWrap>.socialItem:first-child {
-    background-color: #289DFF;
+    /* background-color: #289DFF; */
 }
-
+.tickerAllContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0c1318;
+    z-index: 100;
+    margin: 0 auto;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 50px;
+}
+.closeAdvanced {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+}
+.tickerInside {
+    width: 100%;
+    height: 100%;
+    background: #131c24;
+    border-radius: 4px;
+    padding: 50px;
+    position:relative;
+}
 .socialTop>img {
     width: 21px;
 }
@@ -710,13 +745,85 @@ form.form-wrapper.cf {
     top: 3px;
     left: 15px;
 }
-
+.tickerTop h4 {
+    margin: 0px;
+}
+.tickerTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /* Footer */
+.inputContainerTickerSearch input {
+    height: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    border-radius: 4px;
+    background: #0c1318;
+}
+.inputContainerTickerSearch {
+    width: 100%;
+    margin-right: 15px;
+}
+.tickerLeft h4 {
+    font-weight: bold;
+}
+.tickerRightAdv .glyphicon-remove {
+    font-size: 25px;
+}
+.tickerBody .ticketMain:not(:first-child) {
+    margin-top: 25px;
+}
+.tickerBody {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-bottom:50px;
+    overflow:hidden;
+}
+.tickerAdvBody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -25px;
+    margin-top: -25px;
+    overflow: auto;
+    padding-right: 25px;
+    margin-right: -25px;
+}
+.tickerAdvBodyItem {
+    flex: 1 0 calc(20% - 10px);
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.tickerAdvBodyItem {
+    max-width:407px;
+    /* min-width:325px; */
+}
+
+.hideAdvanced {
+    display:none;
+}
 
 .footer {
     background-color: #ff9900;
 }
-
+.tickerRightAdv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 25px;
+    justify-content: space-between;
+}
 .footerWrap {
     max-width: 1800px;
     margin: 0 auto;
@@ -1076,8 +1183,14 @@ ul.movileNavList li {
     margin: 0px;
     border-radius: 100%;
 }
-
-
+label.control.control--radio.active {
+    background: #ff9900;
+    color: #fff;
+}
+.control.control--radio:hover {
+    background: #2197ff;
+    color: #fff;
+}
 
 
 

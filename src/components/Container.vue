@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar></Navbar>
-        <Ticker></Ticker>
+        <!-- <Ticker></Ticker> -->
         <MainBody></MainBody>
         <Footer></Footer>
     </div>

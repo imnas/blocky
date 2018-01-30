@@ -1,5 +1,130 @@
 <template>
     <div class="homeWrap">
+    <div class="homeHeader">
+        <!-- Ticker Design -->
+        <div class="tickerWrap">
+            <div class="vAllContainer"><a href="#" v-on:click="toggleAdvancedF">View All</a></div>
+                <div class="hideAdvanced" v-bind:class="{ tickerAllContainer: toggleAdvanced }">
+                    <div class="tickerInside">
+                        <i class="glyphicon glyphicon-remove closeAdvanced" v-on:click="toggleAdvancedF"/>
+                        <div class="tickerTop">
+                            <div class="tickerLeft">
+                                <h4>Trending Currencies</h4>
+                            </div>
+                            <div class="tickerRightAdv">
+                                <div class="inputContainerTickerSearch">
+                                    <input placeholder="Search Currencies..."/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tickerBody">
+                            <div class="tickerAdvBody">
+                                <div class="tickerAdvBodyItem">
+                                    <div class="tickerItem">
+                                        <div class="tickerLeft">
+                                            <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                        </div>
+                                        <div class="tickerRight">
+                                            <p>Bitcoin [ BTC ]</p>
+                                            <h1>$975.00 MYR</h1>
+                                        </div>
+                                    </div>
+                                </div>                                <div class="tickerAdvBodyItem">
+                                    <div class="tickerItem">
+                                        <div class="tickerLeft">
+                                            <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                        </div>
+                                        <div class="tickerRight">
+                                            <p>Bitcoin [ BTC ]</p>
+                                            <h1>$975.00 MYR</h1>
+                                        </div>
+                                    </div>
+                                </div>                                <div class="tickerAdvBodyItem">
+                                    <div class="tickerItem">
+                                        <div class="tickerLeft">
+                                            <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                        </div>
+                                        <div class="tickerRight">
+                                            <p>Bitcoin [ BTC ]</p>
+                                            <h1>$975.00 MYR</h1>
+                                        </div>
+                                    </div>
+                                </div>                                <div class="tickerAdvBodyItem">
+                                    <div class="tickerItem">
+                                        <div class="tickerLeft">
+                                            <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                        </div>
+                                        <div class="tickerRight">
+                                            <p>Bitcoin [ BTC ]</p>
+                                            <h1>$975.00 MYR</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            <div class="coinPricesContainer">
+                <div class="flexItemContainerPrice">
+                    <div class="ticketMain">
+                        <div class="flexItemCoinPrice">
+                            <div class="tickerItem">
+                                <div class="tickerLeft">
+                                    <img src="../../assets/img/etherLogo.png" alt="Ethereum">
+                                </div>
+                                <div class="tickerRight">
+                                    <p>Ethereum [ ETH ]</p>
+                                    <h1>$975.00 MYR</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flexItemCoinPrice">
+                            <div class="tickerItem">
+                                <div class="tickerLeft">
+                                    <img src="../../assets/img/bitcoinCashLogo.png" alt="Bitcoin Cash">
+                                </div>
+                                <div class="tickerRight">
+                                    <p>Bitcoin Cash [ BCH ]</p>
+                                    <h1>$975.00 MYR</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flexItemCoinPrice">
+                            <div class="tickerItem">
+                                <div class="tickerLeft">
+                                    <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                </div>
+                                <div class="tickerRight">
+                                    <p>Bitcoin [ BTC ]</p>
+                                    <h1>$975.00 MYR</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Livestream Section -->
+        <div class="livestreamWrap">
+ 
+                <div class="liveMain">
+                    <div class="liveLeft">
+                        <h1>Live Now</h1>
+                    </div>
+                    <div class="liveRight">
+                        <h1>View Livestream</h1>
+                        <span>
+                        <img src="../../assets/img/play_white.png" alt="Play Livestream">
+                    </span>
+                    </div>
+                </div>
+
+        </div>
+    </div>
         <div class="xx">
             <div class="flexRowCustom">
                 <div class="bodyLeft">
@@ -139,14 +264,8 @@
                                     </div>
                                     <div class="radioContainer">
                                         <div class="control-group">
-                                            <label class="control control--radio">Yes
-                                                <input type="radio" name="radio" checked="checked"/>
-                                                <div class="control__indicator"></div>
-                                            </label>
-                                            <label class="control control--radio">No
-                                                <input type="radio" name="radio"/>
-                                                <div class="control__indicator"></div>
-                                            </label>
+                                            <label class="control control--radio" v-bind:class="{ active: radioIsActiveYes }" v-on:click="selectYes">Yes</label>
+                                            <label class="control control--radio" v-bind:class="{ active: radioIsActiveNo }" v-on:click="selectNo">No</label>
                                         </div>
                                     </div>
                                     <!-- <a href="#">Cast Vote <img src="../../assets/img/arrowRight.png"></a> -->
@@ -182,7 +301,7 @@
                                                 <div class="socialLeft">
                                                     <div class="socialTop">
                                                         <img src="../../assets/img/twitterS.png" alt="Twitter">
-                                                        <a href="#">Blocky_my</a>
+                                                        <a href="https://twitter.com/blocky_my" target="_blank">Blocky_my</a>
                                                     </div>
                                                     <div class="socialBottom">
                                                         <h5>Followers:</h5>
@@ -199,7 +318,7 @@
                                                 <div class="socialLeft">
                                                     <div class="socialTop">
                                                         <img src="../../assets/img/instagramS.png" alt="Instagram">
-                                                        <a href="#">Blocky.my</a>
+                                                        <a href="https://www.instagram.com/blocky.my/" target="_blank">Blocky.my</a>
                                                     </div>
                                                     <div class="socialBottom">
                                                         <h5>Followers:</h5>
@@ -216,7 +335,7 @@
                                                 <div class="socialLeft">
                                                     <div class="socialTop">
                                                         <img src="../../assets/img/facebookS.png" alt="Facebook">
-                                                        <a href="#">Blocky.my</a>
+                                                        <a href="https://www.facebook.com/Blockymy-397902483995283/" target="_blank">Blocky.my</a>
                                                     </div>
                                                     <div class="socialBottom">
                                                         <h5>Followers:</h5>
@@ -273,6 +392,18 @@ export default {
             this.barLoaded = true;
             }, 500);
     },
+    selectYes() {
+            this.radioIsActiveYes = true;
+            this.radioIsActiveNo = false;
+
+    },
+    selectNo() {
+            this.radioIsActiveNo = true;
+            this.radioIsActiveYes = false;
+    },
+    toggleAdvancedF() {
+            this.toggleAdvanced = ! this.toggleAdvanced;
+    },
   },
  beforeMount(){
     this.getInstagram();
@@ -288,7 +419,10 @@ export default {
         instagramFollowers : '<div class="loader customSizeLoad"></div>',
         facebookFollowers : '<div class="loader customSizeLoad"></div>',
         twitterFollowers : '<div class="loader customSizeLoad"></div>',
-        barLoaded: false
+        barLoaded: false,
+        radioIsActiveNo: false,
+        radioIsActiveYes: false,
+        toggleAdvanced: false
     }
   }
 }

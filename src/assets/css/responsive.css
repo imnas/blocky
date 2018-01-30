@@ -68,7 +68,17 @@
 .mobileNavContainer {
     display:unset;
 }
-
+.tickerTop {
+    flex-direction: column;
+}
+.tickerRightAdv {
+    max-width: unset;
+    margin-left: 0px;
+    margin-top: 25px;
+}
+.inputContainerTickerSearch {
+    margin-right:0px;
+}
 }
 
 @media screen and (max-width: 860px) {

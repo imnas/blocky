@@ -3,6 +3,36 @@
         <!-- Ticker Design -->
         <div class="tickerWrap">
             <div class="vAllContainer"><a href="#">View All</a></div>
+                <div class="tickerAllContainer">
+                    <div class="tickerInside">
+                        <i class="glyphicon glyphicon-remove closeAdvanced"/>
+                        <div class="tickerTop">
+                            <div class="tickerLeft">
+                                <h4>Trending Currencies</h4>
+                            </div>
+                            <div class="tickerRightAdv">
+                                <div class="inputContainerTickerSearch">
+                                    <input placeholder="Search Currencies..."/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tickerBody">
+                            <div class="tickerAdvBody">
+                                <div class="tickerAdvBodyItem">
+                                    <div class="tickerItem">
+                                        <div class="tickerLeft">
+                                            <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                        </div>
+                                        <div class="tickerRight">
+                                            <p>Bitcoin [ BTC ]</p>
+                                            <h1>$975.00 MYR</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div class="coinPricesContainer">
                 <div class="flexItemContainerPrice">
                     <div class="ticketMain">
