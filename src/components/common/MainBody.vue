@@ -61,7 +61,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="tickerRight">
                                     <p>Ethereum [ ETH ]</p>
-                                    <h1>$975.00 MYR</h1>
+                                    <h1 v-html="ethereum_price"></h1>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                                 </div>
                                 <div class="tickerRight">
                                     <p>Bitcoin Cash [ BCH ]</p>
-                                    <h1>$975.00 MYR</h1>
+                                    <h1 v-html="bitcoin_cash_price"></h1>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                                 </div>
                                 <div class="tickerRight">
                                     <p>Bitcoin [ BTC ]</p>
-                                    <h1>$975.00 MYR</h1>
+                                    <h1 v-html="bitcoin_price"></h1>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@
 
         <!-- Livestream Section -->
         <div class="livestreamWrap">
- 
+
                 <div class="liveMain">
                     <div class="liveLeft">
                         <h1>Live Now</h1>
@@ -357,14 +357,33 @@
 
 <script>
 import likes from 'likes'
-
+var currencies = [
+  'bitcoin',
+  'bitcoin-cash',
+  'ethereum'
+];
 export default {
   methods: {
+    async getPrices(currency) {
+
+      try {
+
+        var http = await fetch('http://cors-proxy.htmldriven.com/?url=https://graphs2.coinmarketcap.com/currencies/' + currency + '/');
+        var body = await http.json()
+        var prices = JSON.parse(body.body);
+        var latest_price = prices.price_usd[prices.price_usd.length-1][1];
+        var name = currency.replace('-', '_');
+        this[name + '_price'] = '$' + latest_price;
+
+      } catch(e) {
+        console.error(e)
+      }
+
+    },
     getInstagram() {
         likes.instagram('blocky.my', (err, count) => {
             if (err) {
                 console.error(err)
-                process.exit(1)
             }
             this.instagramFollowers = count;
         })
@@ -373,7 +392,6 @@ export default {
         likes.twitter('blocky_my', (err, count) => {
             if (err) {
                 console.error(err)
-                process.exit(1)
             }
             this.twitterFollowers = count;
         })
@@ -382,7 +400,6 @@ export default {
         likes.facebook('Blockymy-397902483995283', (err, count) => {
             if (err) {
                 console.error(err)
-                process.exit(1)
             }
             this.facebookFollowers = count;
         })
@@ -409,13 +426,22 @@ export default {
     this.getInstagram();
     this.getTwitter();
     this.getFacebook();
+
+
+
+    for(let i=0; i<currencies.length; i++) {
+      var cur = currencies[i];
+      this.getPrices(cur);
+    }
+
  },
   mounted(){
     this.barFillOnLoad();
  },
   name: 'MainBody',
   data () {
-    return {
+
+    var def = {
         instagramFollowers : '<div class="loader customSizeLoad"></div>',
         facebookFollowers : '<div class="loader customSizeLoad"></div>',
         twitterFollowers : '<div class="loader customSizeLoad"></div>',
@@ -423,7 +449,13 @@ export default {
         radioIsActiveNo: false,
         radioIsActiveYes: false,
         toggleAdvanced: false
+    };
+
+    for(let i=0; i<currencies.length; i++) {
+      def[currencies[i].replace('-', '_') + '_price'] = '<div class="loader customSizeLoad"></div>';
     }
+
+    return def;
   }
 }
 

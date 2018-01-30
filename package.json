@@ -10,7 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "likes": "^1.0.0",
+    "likes": "https://github.com/crisppY/likes-cors",
     "vue": "^2.5.2",
     "vue-clickaway": "^2.1.0",
     "vue-router": "^3.0.1"
