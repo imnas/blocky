@@ -82,19 +82,27 @@ a:active {
 .navbar-nav {
     margin-top: 22px;
 }
-ul.navItms li:not(:last-child) {
+/* ul.navItms li:not(:last-child) {
     margin-right: 50px;
-}
+} */
 ul.navItms a {
     color: #fff;
-    font-size: 17px;
-    font-weight: 100;
+    font-size: 14px;
+    -webkit-transition: all 0.25s;
     transition: all 0.25s;
+    display: block;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    font-weight:bold;
 }
 ul.navItms {
     display: flex;
     margin: unset;
     flex-direction: row;
+    height:100%;
 }
 .customNav {
     display: flex;
@@ -536,7 +544,7 @@ form.form-wrapper.cf {
 
 .voteBar>div {
     height: 40px;
-    background-color: #2197FF;
+    background-color: #3498db;
     width: 0%;
     transition: all .25s ease-in-out;
 }
@@ -807,7 +815,9 @@ form.form-wrapper.cf {
     max-width:407px;
     /* min-width:325px; */
 }
-
+.navRight {
+    height:100px;
+}
 .hideAdvanced {
     display:none;
 }
@@ -1045,8 +1055,9 @@ ul.movileNavList li {
 }
 .navItms a:hover {
     transition: all 0.25s;
-    border-bottom: 2px solid white;
-    color: #ff9900;
+    /* border-bottom: 2px solid white; */
+    color: #ffffff;
+    background: #3498db;
 }
 .control input {
 	position: absolute;
@@ -1188,7 +1199,7 @@ label.control.control--radio.active {
     color: #fff;
 }
 .control.control--radio:hover {
-    background: #2197ff;
+    background: #3498db;
     color: #fff;
 }
 
