@@ -357,6 +357,8 @@
 
 <script>
 import likes from 'likes'
+import fx from 'money'
+window.fx = fx
 var currencies = [
   'bitcoin',
   'bitcoin-cash',
@@ -364,6 +366,16 @@ var currencies = [
 ];
 export default {
   methods: {
+    async getExc() {
+      try {
+          var http = await fetch('https://api.fixer.io/latest?base=USD&symbols=MYR');
+          var body = await http.json()
+          this.myrRate = body.rates.MYR
+          console.log(myr)
+      } catch(e) {
+        console.error(e)
+      }
+    },
     async getPrices(currency) {
 
       try {
@@ -373,7 +385,8 @@ export default {
         var prices = JSON.parse(body.body);
         var latest_price = prices.price_usd[prices.price_usd.length-1][1];
         var name = currency.replace('-', '_');
-        this[name + '_price'] = '$' + latest_price;
+
+        this[name + '_price'] = (latest_price * this.myrRate).toFixed(2) + ' MYR';
 
       } catch(e) {
         console.error(e)
@@ -426,7 +439,7 @@ export default {
     this.getInstagram();
     this.getTwitter();
     this.getFacebook();
-
+    this.getExc();
 
 
     for(let i=0; i<currencies.length; i++) {
