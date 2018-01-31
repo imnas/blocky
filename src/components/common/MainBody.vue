@@ -22,41 +22,41 @@
                                 <div class="tickerAdvBodyItem">
                                     <div class="tickerItem">
                                         <div class="tickerLeft">
-                                            <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                            <img src="https://shapeshift.io/images/coins/ripple.png" alt="Bitcoin">
                                         </div>
                                         <div class="tickerRight">
-                                            <p>Bitcoin [ BTC ]</p>
-                                            <h1>$975.00 MYR</h1>
+                                            <p>Ripple [ XRP ]</p>
+                                            <h1 v-html="ripple_price"></h1>
                                         </div>
                                     </div>
                                 </div>                                <div class="tickerAdvBodyItem">
                                     <div class="tickerItem">
                                         <div class="tickerLeft">
-                                            <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                            <img src="https://coinpress.io/cointable/assets/images/coins/ADA.png" alt="Bitcoin">
                                         </div>
                                         <div class="tickerRight">
-                                            <p>Bitcoin [ BTC ]</p>
-                                            <h1>$975.00 MYR</h1>
+                                            <p>Cardano [ ADA ]</p>
+                                            <h1 v-html="cardano_price"></h1>
                                         </div>
                                     </div>
                                 </div>                                <div class="tickerAdvBodyItem">
                                     <div class="tickerItem">
                                         <div class="tickerLeft">
-                                            <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                            <img src="https://shapeshift.io/images/coins/litecoin.png" alt="Bitcoin">
                                         </div>
                                         <div class="tickerRight">
-                                            <p>Bitcoin [ BTC ]</p>
-                                            <h1>$975.00 MYR</h1>
+                                            <p>Litecoin [ LTC ]</p>
+                                            <h1 v-html="litecoin_price"></h1>
                                         </div>
                                     </div>
                                 </div>                                <div class="tickerAdvBodyItem">
                                     <div class="tickerItem">
                                         <div class="tickerLeft">
-                                            <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                            <img src="https://shapeshift.io/images/coins/stellar.png" alt="Bitcoin">
                                         </div>
                                         <div class="tickerRight">
-                                            <p>Bitcoin [ BTC ]</p>
-                                            <h1>$975.00 MYR</h1>
+                                            <p>Stellar [ XLM ]</p>
+                                            <h1 v-html="stellar_price"></h1>
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@
                         <div class="flexItemCoinPrice">
                             <div class="tickerItem">
                                 <div class="tickerLeft">
-                                    <img src="../../assets/img/bitcoinCashLogo.png" alt="Bitcoin Cash">
+                                    <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin Cash">
                                 </div>
                                 <div class="tickerRight">
                                     <p>Bitcoin Cash [ BCH ]</p>
@@ -95,7 +95,7 @@
                         <div class="flexItemCoinPrice">
                             <div class="tickerItem">
                                 <div class="tickerLeft">
-                                    <img src="../../assets/img/bitcoinLogo.png" alt="Bitcoin">
+                                    <img src="../../assets/img/bitcoinCashLogo.png" alt="Bitcoin">
                                 </div>
                                 <div class="tickerRight">
                                     <p>Bitcoin [ BTC ]</p>
@@ -149,7 +149,7 @@
                                 </form>
                             </div>
                         <div class="newsWrap">
-                            <h1>Current News</h1>
+                            <h1>Latest News and Stories</h1>
                             <div class="newsMain">
                                 <div class="newsItem">
                                     <div class="customRow">
@@ -259,7 +259,7 @@
                             <div class="sidebar2">
                                 <div class="voteTop">
                                     <div>
-                                        <h1>Voting Poll</h1>
+                                        <h1>Tell us your opinion</h1>
                                         <p>Is Bitcoin a dead meme?</p>
                                     </div>
                                     <div class="radioContainer">
@@ -291,10 +291,10 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="sidebar3">
-                                <h1>Social Media</h1>
+                                <h1>Connect With Us</h1>
                                 <div class="socialWrap">
+                                    <a href="https://twitter.com/blocky_my" target="_blank">
                                     <div class="socialItem">
                                         <div class="crow">
                                             <div class="socialContainer">
@@ -311,7 +311,8 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    </a>
+                                    <a href="https://www.instagram.com/blocky.my/" target="_blank">
                                     <div class="socialItem">
                                         <div class="crow">
                                             <div class="socialContainer">
@@ -328,7 +329,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
 
+                                    <a href="https://www.facebook.com/Blockymy-397902483995283/" target="_blank">
                                     <div class="socialItem">
                                         <div class="crow">
                                             <div class="socialContainer">
@@ -345,6 +348,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -362,7 +366,11 @@ window.fx = fx
 var currencies = [
   'bitcoin',
   'bitcoin-cash',
-  'ethereum'
+  'ethereum',
+  'ripple',
+  'litecoin',
+  'stellar',
+  'cardano'
 ];
 export default {
   methods: {

@@ -2,29 +2,29 @@
     <div class="customNavContainer">
     <nav class="customNav">
         <div class="navLeft">
-            <a class="navLogo" href="/"><img src="../../assets/img/logo.svg"/><h1>Empowering the community</h1></a>
+            <router-link to="/UnderConstruction" class="navLogo"><img src="../../assets/img/logo.svg"/><h1>Empowering the community</h1></router-link>
         </div>
         <div class="navRight">
         <ul class="navItms">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blocky Uni</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Events</a></li>
+            <li><router-link to="/UnderConstruction">Home</router-link></li>
+            <li><router-link to="/UnderConstruction">Blocky Uni</router-link></li>
+            <li><router-link to="/UnderConstruction">News</router-link></li>
+            <li><router-link to="/UnderConstruction">Contact</router-link></li>
+            <li><router-link to="/UnderConstruction">Events</router-link></li>
         </ul>
         <div class="mobileNavContainer" v-on-clickaway="away">
             <a @click="showMenu = true"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
             <div class="sideBar" v-show="showMenu">
                 <div class="closeMenuContainer">
-                    <a class="navLogoMobile" href="/"><img src="../../assets/img/logo.svg"/></a>
+                    <router-link to="/UnderConstruction" class="navLogoMobile"><img src="../../assets/img/logo.svg"/></router-link>
                     <a @click="showMenu = false"><i class="glyphicon glyphicon-remove"></i></a>
                 </div>
                 <ul class="movileNavList">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blocky Uni</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Events</a></li>
+                    <li><router-link to="/UnderConstruction">Home</router-link></li>
+                    <li><router-link to="/UnderConstruction">Blocky Uni</router-link></li>
+                    <li><router-link to="/UnderConstruction">News</router-link></li>
+                    <li><router-link to="/UnderConstruction">Contact</router-link></li>
+                    <li><router-link to="/UnderConstruction">Events</router-link></li>
                 </ul>
             </div>
         </div>

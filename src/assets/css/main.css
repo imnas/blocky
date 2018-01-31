@@ -10,7 +10,9 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 }
-
+input {
+    color:#000;
+}
 body,
 html {
     background-color: #ffffff;
@@ -370,6 +372,7 @@ ul.navItms {
     margin: 0 auto;
     height: 100%;
     /* padding: 50px; */
+    background: #1c252d;
 }
 .customRow {
     display: flex;
@@ -380,12 +383,12 @@ ul.navItms {
     font-weight: 700;
     margin-bottom: 0px;
     margin-top: 0px;
-    color: #6b638a;
-    font-size: 26px;
+    color: #ffffff;
+    font-size: 30px;
     padding-left: 50px;
     padding-top: 50px;
     padding-bottom:50px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #21313f;
 }
 
 /*Subscribe Newsletter*/
@@ -405,7 +408,7 @@ ul.navItms {
 }
 
 .sidebar1 {
-    background-color: #162029;
+    background-color: #1a2229;
     padding: 50px;
     padding-top: 25px;
 }
@@ -480,7 +483,7 @@ form.form-wrapper.cf {
     /* text-transform: uppercase; */
     font-size: 2.7rem;
     font-weight: 900;
-    color: #6B638A;
+    color: #ff9803;
     margin: 0;
     margin-top: 22px;
     margin-bottom: 10px;
@@ -546,7 +549,7 @@ form.form-wrapper.cf {
 
 .voteBar>div {
     height: 40px;
-    background-color: #3498db;
+    background-color: #6b638a;
     width: 0%;
     transition: all .25s ease-in-out;
 }
@@ -568,7 +571,7 @@ form.form-wrapper.cf {
 }
 
 .newsLeft>span {
-    color: rgba(31, 44, 57, 0.77);
+    color: rgb(78, 101, 123);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.4rem;
@@ -578,7 +581,7 @@ form.form-wrapper.cf {
 }
 
 .newsLeft>h1 {
-    color: #1E2E3B;
+    color: #ffffff;
     font-weight: bold;
     /* letter-spacing: -0.4px; */
     font-size: 26px;
@@ -587,7 +590,7 @@ form.form-wrapper.cf {
 }
 
 .newsLeft>p {
-    color: #384f61;
+    color: #ffffff;
     float: right;
     display: inline-block;
     line-height: 29px;
@@ -623,7 +626,7 @@ form.form-wrapper.cf {
 }
 
 .datePosted>p {
-    color: rgba(33, 48, 61, 0.75);
+    color: #fff;
     margin-top: 5px;
     letter-spacing: -0.2px;
     font-size: 1.5rem;
@@ -642,6 +645,7 @@ form.form-wrapper.cf {
 
 .newsMain>hr {
     margin: 0px 0;
+    border-top: 1px solid #21313f;
 }
 
 .newsContainer {
@@ -673,6 +677,7 @@ form.form-wrapper.cf {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color:#fff;
 }
 .socialBottom h5 {
     margin-top: 0px;
@@ -688,7 +693,7 @@ form.form-wrapper.cf {
     margin-top: 10px;
     font-weight: 900;
     font-size: 2.8rem;
-    color: #6B638A;
+    color: #ff9803;
 }
 
 .socialItem {
