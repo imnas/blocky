@@ -260,7 +260,7 @@
                                 <div class="voteTop">
                                     <div>
                                         <h1>Tell us your opinion</h1>
-                                        <p>Is Bitcoin a dead meme?</p>
+                                        <p>Will Bitcoin's price drop even more?</p>
                                     </div>
                                     <div class="radioContainer">
                                         <div class="control-group">
@@ -273,8 +273,8 @@
                                 <div class="voteBottom">
                                     <div class="voteItem">
                                         <div>
-                                            <h1>Because it is a dead meme.</h1>
-                                            <p>50%, 2,405</p>
+                                            <h1>Yes</h1>
+                                            <p>20%, 1,002</p>
                                         </div>
                                         <div class="voteBar">
                                             <div v-bind:class="{ barFiller: barLoaded }"></div>
@@ -282,8 +282,8 @@
                                     </div>
                                     <div class="voteItem">
                                         <div>
-                                            <h1>Because it is a dead meme.</h1>
-                                            <p>50%, 2,405</p>
+                                            <h1>No</h1>
+                                            <p>80%, 2,405</p>
                                         </div>
                                         <div class="voteBar">
                                             <div v-bind:class="{ barFiller: barLoaded }"></div>
