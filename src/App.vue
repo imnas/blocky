@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <Container/>
+    <RouteContainer/>
   </div>
 </template>
 
 <script>
-import Container from '@/components/Container'
+import RouteContainer from '@/components/RouteContainer'
 export default {
   components: {
-    Container
+    RouteContainer
   },
   name: 'App'
 }
