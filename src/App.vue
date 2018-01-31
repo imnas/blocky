@@ -11,7 +11,7 @@ export default {
     RouteContainer
   },
   name: 'App'
-}
+} 
 </script>
 
 <style>
