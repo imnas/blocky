@@ -193,7 +193,8 @@ ul.navItms {
     margin: 0;
     padding: 0;
     color: #ff9900;
-    font-size: 1.75rem;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .tickerRight>h1 {
@@ -222,6 +223,9 @@ ul.navItms {
     position: relative;
     transition: all .25s ease-in-out;
     background: #3498db;
+}
+.tickerItem:hover > .tickerRight>p{
+    color:#fff;
 }
 .newsItem:hover {
     background: #162029;
