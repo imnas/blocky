@@ -9,6 +9,9 @@
                             <ul>
                                 <li><img src="../../assets/img/logoF.png" alt="Blocky.my"></li>
                                 <li>
+                                    <h1>BLOCKCHAIN MEDIA NETWORK SDN BHD</h1>
+                                </li>
+                                <li>
                                     <h1>Address</h1>
                                     <p>Kuala Lumpur, Malaysia</p>
                                 </li>
@@ -32,9 +35,9 @@
                                 <li>
                                     <h1>Social Media</h1>
                                     <ul>
-                                        <li><a href="#"><img src="../../assets/img/twitterF.png"></a></li>
-                                        <li><a href="#"><img src="../../assets/img/instagramF.png"></a></li>
-                                        <li><a href="#"><img src="../../assets/img/facebookF.png"></a></li>
+                                        <li><a href="https://twitter.com/blocky_my" target="_blank"><img src="../../assets/img/twitterF.png"></a></li>
+                                        <li><a href="https://www.instagram.com/blocky.my/" target="_blank"><img src="../../assets/img/instagramF.png"></a></li>
+                                        <li><a href="https://www.facebook.com/Blockymy-397902483995283/" target="_blank"><img src="../../assets/img/facebookF.png"></a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -48,18 +51,14 @@
                                 <li>
                                     <h1>Our Partners</h1>
                                     <ul>
-                                        <li><a href="#"><img src="../../assets/img/partner1.png" alt="YouTube"></a></li>
-                                        <li><a href="#"><img src="../../assets/img/partner2.png" alt="Komodo"></a></li>
-                                        <li><a href="#"><img src="../../assets/img/partner3.png" alt="Cointelegraph"></a></li>
+                                        <li><a href="http://www.pinkexc.biz/" target="_blank"><img src="../../assets/img/partner4.png" alt="Pink Exchange"></a></li>
+                                        <!-- <li><a href="#"><img src="../../assets/img/partner2.png" alt="Komodo"></a></li>
+                                        <li><a href="#"><img src="../../assets/img/partner3.png" alt="Cointelegraph"></a></li> -->
                                     </ul>
                                 </li>
                                 <li>
-                                    <h1>Privacy Policy:</h1>
-                                    <a href="#">View Our Policy <img src="../../assets/img/arrowRightF.png"></a>
-                                </li>
-                                <li>
-                                    <h1>Terms of Use:</h1>
-                                    <a href="#">View Our TOS <img src="../../assets/img/arrowRightF.png"></a>
+                                    <h1>Privacy & Terms</h1>
+                                    <a href="#">View <img src="../../assets/img/arrowRightF.png"></a>
                                 </li>
                             </ul>
                         </div>

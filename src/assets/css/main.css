@@ -114,8 +114,8 @@ ul.navItms {
     max-width: 1750px;
     margin: 0 auto;
     align-items: center;
-    min-height: 100px;
-    max-height: 100px;
+    min-height: 115px;
+    max-height: 115px;
 }
 .customNavContainer {
     background: #0d141a;
@@ -827,7 +827,7 @@ form.form-wrapper.cf {
     /* min-width:325px; */
 }
 .navRight {
-    height:100px;
+    height:115px;
 }
 .hideAdvanced {
     display:none;
@@ -884,6 +884,8 @@ form.form-wrapper.cf {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
+    margin-top: -25px;
 }
 .footerItem>h1 {
     margin-bottom: 0;
@@ -897,13 +899,19 @@ form.form-wrapper.cf {
     position:relative;
     width:100%;
 }
-.navLogo h1 {
+.navLogo > div {
     font-size: 12px;
     font-weight: 600;
     color: #fff;
     position: absolute;
-    top: 21px;
-    left: 44px;
+    top: 26px;
+    left: 45px;
+}
+.navBarLogoText h1:last-child {
+    margin-top: -9px;
+}
+.navBarLogoText h1 {
+    font-size: 10px;
 }
 .footerItem>ul h1 {
     font-weight: 800;

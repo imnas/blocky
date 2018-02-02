@@ -2,7 +2,12 @@
     <div class="customNavContainer">
     <nav class="customNav">
         <div class="navLeft">
-            <router-link to="/UnderConstruction" class="navLogo"><img src="../../assets/img/logo.svg"/><h1>Empowering the community</h1></router-link>
+            <router-link to="/UnderConstruction" class="navLogo"><img src="../../assets/img/logo.svg"/>
+                <div class="navBarLogoText">
+                    <h1>BLOCKCHAIN MEDIA NETWORK SDN BHD</h1>
+                    <h1>Empowering the community</h1>
+                </div>
+            </router-link>
         </div>
         <div class="navRight">
         <ul class="navItms">
