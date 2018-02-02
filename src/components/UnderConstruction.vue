@@ -13,7 +13,7 @@
         </div>
         <div class="ucFoot">
             <div class="ucFootLeft">
-                <router-link to="/">Go Home</router-link>
+                <router-link to="/"><img src="../assets/img/constArrow.png" alt="Go Home"> Go Home</router-link>
             </div>
             <div class="ucMid">
                 <h4>Want to know when this page releases?</h4>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="ucFootRight">
-                <router-link to="/">Learn More</router-link>
+                <router-link to="/">Learn More <img src="../assets/img/constArrow.png" alt="Learn More"></router-link>
             </div>
         </div>
     </div>
@@ -110,14 +110,21 @@ export default {
     align-items: center;
 }
 .ucMidInputContainer a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 55px;
-    background: black;
+    background: #131e24;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-left: 25px;
     padding-right: 25px;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 25px 4px 4px 25px;
+    margin-left: -25px;
     color: #fff;
     font-weight: bold;
 }

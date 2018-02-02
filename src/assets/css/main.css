@@ -1222,7 +1222,16 @@ label.control.control--radio.active {
     color: #fff;
 }
 
+.ucFootRight>a>img {
+    width: 30px;
+    margin-left: 10px;
+}
 
+.ucFootLeft>a>img {
+    width: 30px;
+    margin-right: 10px;
+    transform: rotate(180deg);
+}
 
 
 
