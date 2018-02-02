@@ -259,7 +259,7 @@
                             <div class="sidebar2">
                                 <div class="voteTop">
                                     <div>
-                                        <h1>Tell us your opinion!</h1>
+                                        <h1>Tell us your opinion.</h1>
                                         <p>Will Bitcoin's price drop even more?</p>
                                     </div>
                                     <div class="radioContainer">
