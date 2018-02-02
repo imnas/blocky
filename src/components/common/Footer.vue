@@ -13,7 +13,7 @@
                                 </li>
                                 <li>
                                     <h1>Address</h1>
-                                    <p>Kuala Lumpur, Malaysia</p>
+                                    <p>4-28, Lorong Medan Tuanku 1, 50300, Kuala Lumpur, Malaysia</p>
                                 </li>
                                 <li>
                                     <h1>Copyright</h1>
@@ -52,8 +52,6 @@
                                     <h1>Our Partners</h1>
                                     <ul>
                                         <li><a href="http://www.pinkexc.biz/" target="_blank"><img src="../../assets/img/partner4.png" alt="Pink Exchange"></a></li>
-                                        <!-- <li><a href="#"><img src="../../assets/img/partner2.png" alt="Komodo"></a></li>
-                                        <li><a href="#"><img src="../../assets/img/partner3.png" alt="Cointelegraph"></a></li> -->
                                     </ul>
                                 </li>
                                 <li>

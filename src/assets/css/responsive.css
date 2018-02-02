@@ -97,6 +97,9 @@
     .newsImage {
         margin-right:0px;
     }
+    .ucFoot {
+        background-image: unset!important;
+    }
     }
 
 @media screen and (max-width: 768px) {
