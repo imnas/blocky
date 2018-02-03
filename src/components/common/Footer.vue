@@ -56,7 +56,7 @@
                                 </li>
                                 <li>
                                     <h1>Privacy & Terms</h1>
-                                    <a href="#">View <img src="../../assets/img/arrowRightF.png"></a>
+                                    <router-link to="/TermsPrivacy">View <img src="../../assets/img/arrowRightF.png"></router-link>
                                 </li>
                             </ul>
                         </div>
