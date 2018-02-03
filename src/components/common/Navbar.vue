@@ -12,7 +12,18 @@
         <div class="navRight">
         <ul class="navItms">
             <li><router-link to="/UnderConstruction">Home</router-link></li>
-            <li><router-link to="/UnderConstruction">Blocky Uni</router-link></li>
+            <li>
+                <router-link to="/UnderConstruction">Blocky Uni</router-link>
+                <div class="dropDownContainerNav">
+                    <div>
+                        <a>APA ITU BLOCKCHAIN?</a>
+                        <a>APA ITU MATA WANG KRIPTO?</a>
+                        <a>APA ITU BITCOIN?</a>
+                        <a>APA ITU ETHEREUM?</a>
+                        <a>APA ITU ALT-COINS?</a>
+                    </div>
+                </div>
+            </li>
             <li><router-link to="/UnderConstruction">News</router-link></li>
             <li><router-link to="/UnderConstruction">Contact</router-link></li>
             <li><router-link to="/UnderConstruction">Events</router-link></li>
@@ -26,7 +37,9 @@
                 </div>
                 <ul class="movileNavList">
                     <li><router-link to="/UnderConstruction">Home</router-link></li>
-                    <li><router-link to="/UnderConstruction">Blocky Uni</router-link></li>
+                    <li>
+                        <router-link to="/UnderConstruction">Blocky Uni</router-link>
+                    </li>
                     <li><router-link to="/UnderConstruction">News</router-link></li>
                     <li><router-link to="/UnderConstruction">Contact</router-link></li>
                     <li><router-link to="/UnderConstruction">Events</router-link></li>

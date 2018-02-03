@@ -1232,13 +1232,42 @@ label.control.control--radio.active {
     margin-right: 10px;
     transform: rotate(180deg);
 }
+ul.navItms li {
+    position:relative;
+}
 
+
+
+
+
+
+
+.dropDownContainerNav > div a:not(:last-child) {
+    border-bottom: 1px solid #ffb84d;
+}
+.dropDownContainerNav > div a:last-child {
+    border-radius: 0px 0px 4px 4px;
+}
+.dropDownContainerNav > div a:first-child {
+    border-radius: 4px 4px 0px 0px;
+}
+.dropDownContainerNav > div a {
+    height: 65px;
+    background: #ff9900;
+    font-size: 12px;
+}
+.dropDownContainerNav {
+    position: absolute;
+    right: 23px;
+    width: 200px;
+    z-index: 100;
+    top: 90px;
+}
 .naviContainer > div {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
-
 .naviContainer > div a {
     color: #0d141a;
     margin-right: 25px;
