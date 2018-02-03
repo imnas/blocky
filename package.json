@@ -10,10 +10,15 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "likes": "https://github.com/crisppY/likes-cors",
+    "likes": "git+https://github.com/crisppY/likes-cors.git",
     "money": "^0.2.0",
+    "popover": "^2.4.1",
+    "v-click-outside": "^1.0.2",
     "vue": "^2.5.2",
+    "vue-click-outside": "^1.0.7",
     "vue-clickaway": "^2.1.0",
+    "vue-my-dropdown": "^2.1.0",
+    "vue-popover": "^1.6.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

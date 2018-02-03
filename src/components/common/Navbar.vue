@@ -13,8 +13,20 @@
         <ul class="navItms">
             <li><router-link to="/UnderConstruction">Home</router-link></li>
             <li>
-                <router-link to="/UnderConstruction">Blocky Uni</router-link>
-                <div class="dropDownContainerNav">
+                <a @click="toggleUni">Blocky Uni</a>
+                <div v-click-outside="hideUni" class="dropDownContainerNav" v-show="showDropdownUni">
+                    <div>
+                        <a>APA ITU BLOCKCHAINxxx?</a>
+                        <a>APA ITU MATA WANG KRIPTO?</a>
+                        <a>APA ITU BITCOIN?</a>
+                        <a>APA ITU ETHEREUM?</a>
+                        <a>APA ITU ALT-COINS?</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a v-click-outside="onClickOutside" @click="toggleNews">News</a>
+                <div class="dropDownContainerNav" v-show="showDropdownNews">
                     <div>
                         <a>APA ITU BLOCKCHAIN?</a>
                         <a>APA ITU MATA WANG KRIPTO?</a>
@@ -24,16 +36,15 @@
                     </div>
                 </div>
             </li>
-            <li><router-link to="/UnderConstruction">News</router-link></li>
             <li><router-link to="/UnderConstruction">Contact</router-link></li>
             <li><router-link to="/UnderConstruction">Events</router-link></li>
         </ul>
-        <div class="mobileNavContainer" v-on-clickaway="away">
-            <a @click="showMenu = true"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
-            <div class="sideBar" v-show="showMenu">
+        <div class="mobileNavContainer" >
+            <a><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+            <div class="sideBar" >
                 <div class="closeMenuContainer">
                     <router-link to="/UnderConstruction" class="navLogoMobile"><img src="../../assets/img/logo.svg"/></router-link>
-                    <a @click="showMenu = false"><i class="glyphicon glyphicon-remove"></i></a>
+                    <a><i class="glyphicon glyphicon-remove"></i></a>
                 </div>
                 <ul class="movileNavList">
                     <li><router-link to="/UnderConstruction">Home</router-link></li>
@@ -52,24 +63,44 @@
 </template>
 
 <script>
-import { mixin as clickaway } from 'vue-clickaway';
-
+// import ClickOutside from 'vue-click-outside'
+import vClickOutside from 'v-click-outside'
 
 export default {
-  mixins: [ clickaway ],
   methods: {
-    away: function() {
-    
-      this.showMenu = false,
-      console.log('clicked away');
+      onClickOutside (event) {
+              this.showDropdownNews = false
+      },
+    toggleUni () {
+      this.showDropdownNews = true
     },
+ 
+    hideUni () {
+      this.showDropdownNews = false
+    },
+    toggleNews (e) {
+        console.log('hi')
+        console.log(e)
+      this.showDropdownNews = true
+        e.stopPropogation()
+        e.preventDefault()
+    },
+ 
+    hideNews () {
+      this.showDropdownNews = false
+    }
   },
   name: 'Navbar',
   data () {
     return {
         showMenu: false,
+        showDropdownNews: false,
+        showDropdownUni: false
     }
-  }
+  },
+    directives: {
+      clickOutside: vClickOutside.directive
+    },
 }
 </script>
 
