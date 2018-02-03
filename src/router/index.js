@@ -4,6 +4,7 @@ import RouteContainer from '@/components/RouteContainer'
 import Container from '@/components/Container'
 import vue404 from '@/components/404'
 import UnderConstruction from '@/components/UnderConstruction'
+import TermsPrivacy from '@/components/TermsPrivacy'
 
 Vue.use(Router)
 
@@ -23,6 +24,12 @@ export default new Router({
       path: '/UnderConstruction',
       name: 'UnderConstruction',
       component: UnderConstruction
-    }
+    },
+    {
+      path: '/TermsPrivacy',
+      name: 'TermsPrivacy',
+      component: TermsPrivacy
+    },
+
   ]
 })

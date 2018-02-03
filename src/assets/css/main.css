@@ -1233,5 +1233,36 @@ label.control.control--radio.active {
     transform: rotate(180deg);
 }
 
+.naviContainer > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
 
+.naviContainer > div a {
+    color: #0d141a;
+    margin-right: 25px;
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 65px;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.naviContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
 
