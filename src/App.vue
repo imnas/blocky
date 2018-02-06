@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <RouteContainer/>
+          <RouteContainer/>
+
   </div>
 </template>
 
@@ -10,8 +11,14 @@ export default {
   components: {
     RouteContainer
   },
-  name: 'App'
-} 
+  name: 'App',
+    data: () => ({
+      drawer: null
+    }),
+    props: {
+      source: String
+    }
+}
 </script>
 
 <style>

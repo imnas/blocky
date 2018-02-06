@@ -155,7 +155,7 @@
                                     <div class="customRow">
                                         <div class="col-md-4">
                                             <div class="newsImage">
-                                                <img src="../../assets/img/news3.jpg">
+                                                <img src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=14fad02f7a44318650b93dd27fc8435b&auto=format&fit=crop&w=1999&q=80">
                                             </div>
                                         </div>
                                         <div class="col-md-8">
@@ -188,7 +188,7 @@
                                     <div class="customRow">
                                         <div class="col-md-4">
                                             <div class="newsImage">
-                                                <img src="../../assets/img/news3.jpg">
+                                                <img src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=14fad02f7a44318650b93dd27fc8435b&auto=format&fit=crop&w=1999&q=80">
                                             </div>
                                         </div>
                                         <div class="col-md-8">
@@ -221,7 +221,7 @@
                                     <div class="customRow">
                                         <div class="col-md-4">
                                             <div class="newsImage">
-                                                <img src="../../assets/img/news3.jpg">
+                                                <img src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=14fad02f7a44318650b93dd27fc8435b&auto=format&fit=crop&w=1999&q=80">
                                             </div>
                                         </div>
                                         <div class="col-md-8">
@@ -379,7 +379,7 @@ export default {
           var http = await fetch('https://api.fixer.io/latest?base=USD&symbols=MYR');
           var body = await http.json()
           this.myrRate = body.rates.MYR
-          console.log(myr)
+        //   console.log(myr)
       } catch(e) {
         console.error(e)
       }
