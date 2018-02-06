@@ -144,7 +144,7 @@ export default {
     -webkit-overflow-scrolling: touch;
     z-index: 0;
     /* display: none; */
-    background-color: #162029;
+    background-color: #162029 !important;
     color: white;
     z-index: 100;
     left: 0;
@@ -153,10 +153,10 @@ export default {
 .list__tile {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100% !important;
 }
 .list__tile__title {
-    height: 50px;
+    height: 50px !important;
 }
 
 .mobileSubMenu a:not(:first-child) {

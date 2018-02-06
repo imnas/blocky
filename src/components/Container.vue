@@ -94,7 +94,7 @@ input, select, textarea {
     justify-content: center;
 }
 .application .theme--light.list, .theme--light .list {
-    background: #21313f;
+    background: #21313f !important;
     margin-bottom: 0px;
 }
 .menu__activator {
