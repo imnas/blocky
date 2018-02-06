@@ -1,3 +1,9 @@
+.flexNavi button.toolbar__side-icon.btn.btn--icon {
+    display: none;
+}
+.toolbar__title {
+    margin-left: 0px;
+}
 @media screen and (max-width: 1585px) {
     .sidebar1>h1 {
         font-size: 28px;
@@ -53,6 +59,12 @@
     opacity:0;
 }
 @media screen and (max-width: 992px) {
+    .flexNavi button.toolbar__side-icon.btn.btn--icon {
+        display: block !important;
+    }
+    .toolbar__title {
+        margin-left: 10px;
+    }
     .categoryType {
         text-align: left;
     }

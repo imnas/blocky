@@ -182,7 +182,7 @@ ul.navItms {
 .ticketMain {
     margin: 0 auto;
     text-align: center;
-    max-width: 1750px;
+    max-width: 1800px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1034,7 +1034,7 @@ ul.movileNavList li {
     display: flex;
     align-items: center;
     padding-left: 25px;
-    border-bottom: 1px solid #21313f;
+    border-bottom:1px solid #191e22;
 }
 .flexRowCustom {
     display: flex;
