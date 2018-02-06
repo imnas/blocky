@@ -205,6 +205,7 @@ ul.navItms {
     font-size: 18px;
     font-weight: 800;
     margin-top: 8px;
+    color:#fff;
 }
 
 
@@ -281,6 +282,7 @@ ul.navItms {
     padding: 25px 50px;
     /* max-width: 1750px; */
     margin: 0 auto;
+    color:#fff;
 }
 
 .liveLeft>h1 {
@@ -347,6 +349,7 @@ ul.navItms {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color:#fff;
 }
 
 /* .anonLeft {
@@ -477,6 +480,7 @@ form.form-wrapper.cf {
     padding: 0 50px;
     padding-bottom: 40px;
     padding-top: 25px;
+    color:#fff;
 }
 
 .voteTop>a>img {

@@ -130,6 +130,6 @@ input, select, textarea {
     font-size: 12px;
 }
 .application .theme--light.navigation-drawer, .theme--light .navigation-drawer {
-    background: #15191c;
+    background: #15191c !important;
 }
 </style>
