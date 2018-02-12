@@ -11,7 +11,7 @@ export default {
   components: {
     RouteContainer
   },
-  name: 'App', 
+  name: 'App',  
     data: () => ({
       drawer: null 
     }),
