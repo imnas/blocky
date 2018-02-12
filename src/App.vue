@@ -14,7 +14,7 @@ export default {
   name: 'App',
     data: () => ({
       drawer: null
-    }),
+    }),   
     props: {
       source: String
     }
