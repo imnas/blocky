@@ -164,7 +164,6 @@
                                                     <div class="col-md-9">
                                                         <div class="newsLeft">
                                                             <h1>Stair Lifts Feel The Freedom Of Your Home.</h1>
-                                                            <span>John Church</span>
                                                             <p>Goldman Sachs analysts have claimed bitcoin is in a bubble bigger than the dot-com era and the famous Dutch tulip mania</p>
                                                         </div>
                                                     </div>
@@ -197,7 +196,6 @@
                                                     <div class="col-md-9">
                                                         <div class="newsLeft">
                                                             <h1>Stair Lifts Feel The Freedom Of Your Home.</h1>
-                                                            <span>John Church</span>
                                                             <p>Goldman Sachs analysts have claimed bitcoin is in a bubble bigger than the dot-com era and the famous Dutch tulip mania</p>
                                                         </div>
                                                     </div>
@@ -230,7 +228,6 @@
                                                     <div class="col-md-9">
                                                         <div class="newsLeft">
                                                             <h1>Stair Lifts Feel The Freedom Of Your Home.</h1>
-                                                            <span>John Church</span>
                                                             <p>Goldman Sachs analysts have claimed bitcoin is in a bubble bigger than the dot-com era and the famous Dutch tulip mania</p>
                                                         </div>
                                                     </div>
